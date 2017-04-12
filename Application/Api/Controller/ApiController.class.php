@@ -16,10 +16,12 @@ class ApiController extends AdminController
         $this->tabName = C( 'db_prefix' );
     }
 
+
     public function index()
     {
         $this->redirect('config');
         $this->navCtrl();
+        $this->anonymous();
     }
 
     public function config()
@@ -50,6 +52,56 @@ class ApiController extends AdminController
             ->button( '打数据库补丁',array('class'=>'ajax-get btn btn-default btn-danger','style'=>'float:right','url'=>U('executeSQL')))
             ->buttonSubmit('', '保存');
         $builder->display();
+    }
+
+    public function  anonymous(){
+        $data = D('anonymous')->where('id>0')->select();
+        $listBuilder = new AdminListBuilder();
+        $listBuilder->title('随机用户操作')
+            ->keyId('uid')
+            ->keyDoActionEdit('deleteAnonymousId?id=###','删除')
+            ->data($data)
+            ->buttonNew(U("addAnonymousId"),'新增','')
+        ;
+        ;
+        $listBuilder->display();
+    }
+    /*
+   * 删除对应随机id
+   */
+    public  function deleteAnonymousId($id)
+    {
+        D('anonymous')->where('id='.$id)->delete();
+        $this->redirect('anonymous');
+    }
+    public function addAnonymousId()
+    {
+        if(IS_POST)
+        {
+            $data['uid'] = I('post.uid', '', 'intval');
+            if($data['uid']){
+                $is_val=D('anonymous')->where('uid='.$data[uid])->select();
+                if($is_val)
+                {
+                    $this->error('该用户id已经存在');
+                    return;
+                }
+                D('anonymous')->add($data);
+                $this->success('新增成功！',U('anonymous'));
+            }
+            else if($data['uid']=="")
+            {
+                $this->error('不能为空！');
+            }
+            else
+            {
+                $this->error('插入失败！');
+            }
+        }
+            $builder=new AdminConfigBuilder();
+            $builder->keyText('uid', '请输入你想添加的uid')
+                ->buttonSubmit('', '添加');
+            $builder->display();
     }
 
     public function navCtrl(){
@@ -216,6 +268,7 @@ CREATE TABLE IF NOT EXISTS `".$this->tabName."user_geolocation` (
            ->pagination($totalCount, $r);
        $listBuilder->display();
    }
+
 
     /**分类信息分类图标
      * @param int $entity_id

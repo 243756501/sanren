@@ -65,7 +65,8 @@ class WeiboController extends BaseController
      */
     public function sendWeibo()
     {
-        $mid = $this->requireIsLogin(); //当前用户uid
+//        $mid = $this->requireIsLogin(); //当前用户uid
+        $mid=$this-> getrandomId();
         $aContent = I_POST('content','html');
         $aFrom = I_POST('from', 'text');
         $aCover = I_POST('cover', 'intval');
@@ -304,7 +305,6 @@ class WeiboController extends BaseController
     public function sendComment()
     {
         $mid = $this->requireIsLogin();
-
         $aContent = I_POST('content', 'text'); //说点什么的内容
         $aWeiboId = I_POST('weibo_id', 'intval'); //要评论的微博的ID
         $aCommentId = I_POST('to_comment_id', 'intval');

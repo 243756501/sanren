@@ -1,4 +1,22 @@
 <?php
+/*
+ * 随机获取设置的随机Id
+ */
+function getrandomId(){
+    $array=D('anonymous')->where('id>0')->select();
+    $len=count($array);
+    $ran=rand(1,$len);
+    if($array[$ran]['uid'])
+    {
+        return $array[$ran]['uid'];
+    }
+    else
+    {
+        $this->getrandomId();
+    }
+}
+
+
 
 /**统一的推送接口
  * @param $uidList

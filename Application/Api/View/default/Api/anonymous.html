@@ -1,0 +1,151 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <a href="{:U('Admin/Index/index')}">首页  </a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <span>APP导航</span>
+            </li>
+        </ul>
+        <div class="page-toolbar">
+            <include file="Public/_addTo"/>
+        </div>
+    </div>
+
+    <div class="main-title">
+        <h2>{:L("_NAVIGATION_MANAGEMENT_")}<span style="font-size: 14px;color: red">**任何修改后记得保存，否则修改无效</span></h2>
+
+    </div>
+    <style>
+        .channel-ul .color-chose {margin-top: 0!important;margin-left: 20px;}
+        .simpleColorDisplay{width: auto !important;}
+        .band-text{width: 300px}
+        .status-view{margin-top: 7px; margin-left: 10px;margin-right: 0}
+    </style>
+    <div class="with-padding">
+        <form action="{:U()}" method="post" class="form-horizontal" >
+            <ul class="channel-ul">
+                <volist name="list" id="nav">
+                    <li class="clearfix pLi" >
+                        <input name="nav[sort][]" class="sort" style="display: none" >
+                        <div class="pull-left nav_list">
+                            <select name="nav[type][]" class="form-control nav-type" style="width: 110px;">
+                                <option value="module" <if condition="$nav['name']">selected</if>>{:L("_SYSTEM_MODULE_")}</option>
+                                <option value="custom" <if condition="!$nav['name']">selected</if>>{:L("_CUSTOM_")}</option>
+                            </select>
+                            <select name="nav[modul][]" class="form-control module" style="width: 110px;<php>if(!$nav['name']){</php>display:none<php>}</php>">
+                                <php>foreach($module as $k=>$v){</php>
+                                <option value="{$v.entry}" data-remark="{$v.summary}" data-name="{$v.name}" data-icon="{$v.icon}" <if condition="strtolower($nav['url']) eq strtolower($v['entry'])">selected</if>>{$v.alias}</option>
+                                <php>}unset($k,$v)</php>
+                            </select>
+                            <input name="nav[name][]" class="hide name" value="{$nav.name}">
+                            <input name="nav[title][]" placeholder={:L("_PLEASE_ENTER_THE_TITLE_WITH_DOUBLE_")} class="form-control title" style="width: 110px;" value="{$nav.title}">
+                            <input name="nav[url][]" placeholder={:L("_PLEASE_ENTER_A_LINK_WITH_DOUBLE_")}   class="form-control url" style="width: 200px;<php>if($nav['name']){</php>display:none<php>}</php>" value=" {$nav.url}">
+                        </div>
+                        <!--<div class='pull-left' title={:L("__WITH_DOUBLE_")}><php>$icon = $nav['icon']; if(empty($nav['icon'])){ $icon = '';}</php>
+                            <select name="nav[icon][]" title={:L("__WITH_DOUBLE_")} class="select-os-icon" data-value="{$icon|default='-'}"></select>
+                        </div>-->
+                        <div class='pull-left i-list'>
+                            <a href="javascript:" title={:L("_ADD_A_NAVIGATION_WITH_DOUBLE_")} class="add-one"><i class="icon icon-plus"></i></a>
+                            <a href="javascript:"  title={:L("_REMOVE_THIS_NAVIGATION_WITH_DOUBLE_")} class="remove-li"><i class="icon icon-remove"></i></a>
+                            <a href="javascript:" title={:L("_MOBILE_NAVIGATION_SORT_WITH_DOUBLE_")}><i class="icon icon-move sort-handle-1"></i></a>
+                        </div>
+                        <div class='pull-left color-chose hide' title='选择图标颜色' style="text-align: center">
+                            <input name="nav[icon_color][]" class='simple_color_callback' value="{$nav['icon_color']|default='#000000'}"/>
+                            <div>图标颜色</div>
+                        </div>
+                        <div class='pull-left color-chose hide' title='选择文字颜色'>
+                            <input name="nav[title_color][]" class='simple_color_callback' value="{$nav['title_color']|default='#000000'}"/>
+                            <div>文字颜色</div>
+                        </div>
+                        <div class='pull-left band-text'>
+                            <input name="nav[remark][]"  class="form-control remark" placeholder="备注信息" value="{$nav['remark']}">
+                        </div>
+                        <div class='pull-right status-view'>
+                            <input name="nav[status][]" class="status_input" value="{$nav['status']}" style="display: none;">
+                            <label title='是否启用'>
+                                <input class="status" <if condition="$nav['status'] eq 1">checked</if>  type="checkbox" value="1">开启
+                            </label>
+                        </div>
+                        <div class='pull-right new-blank' <if condition="$nav['type'] == 'module'">style="display:none"</if>>
+                        <input name="nav[target][]" class="target_input" value="{$nav['target']}">
+                        <label title={:L("_THE_NEW_WINDOW_OPENS_WITH_DOUBLE_")} >
+                            <input class="target" <if condition="$nav['target'] eq 1">checked</if>  type="checkbox" value="1">{:L("_NEW_WINDOW_OPENS_")}
+                        </label>
+    </div>
+
+    </li>
+    </volist>
+    </ul>
+    <div class="form-item with-padding">
+        <button class="btn submit-btn ajax-post green" id="submit" type="submit" target-form="form-horizontal">保存修改</button>
+        <button class="btn submit-btn ajax-post btn-danger pull-right" data-role="reset_nav">重置(谨慎)</button>
+    </div>
+    </form>
+    </div>
+    <div id="one-nav" class="hide">
+        <li class="clearfix pLi" >
+            <input name="nav[sort][]" class="sort" style="display: none" >
+            <div class="pull-left nav_list">
+                <select name="nav[type][]" class="form-control nav-type" style="width: 110px;">
+                    <option value="module" >{:L("_SYSTEM_MODULE_")}</option>
+                    <option value="custom" >{:L("_CUSTOM_")}</option>
+                </select>
+                <select name="nav[module][]" class="form-control module" style="width: 110px;">
+                    <php>foreach($module as $k=>$v){</php>
+                    <option value="{$v.entry}" data-remark="{$v.summary}" data-name="{$v.name}" data-icon="{$v.icon}" >{$v.alias}</option>
+                    <php>}unset($k,$v)</php>
+                </select>
+                <input name="nav[name][]" class="hide name" value="{$module.0.name}">
+                <input name="nav[title][]" placeholder={:L("_PLEASE_ENTER_THE_TITLE_WITH_DOUBLE_")} class="form-control title" style="width: 110px;" value="{$module.0.alias}">
+                <input name="nav[url][]" placeholder={:L("_PLEASE_ENTER_A_LINK_WITH_DOUBLE_")}  class="form-control url" style="width: 200px;display:none" value="{$module.0.entry}">
+            </div>
+            <!--<div class='pull-left' title={:L("_SELECT_ICON_WITH_DOUBLE_")}>-->
+            <!--<select name="nav[icon][]" title={:L("_SELECT_ICON_WITH_DOUBLE_")} class="select-os-icon" data-value="{$module.0.icon}"></select>-->
+            <!--</div>-->
+            <div class='pull-left i-list'>
+                <a href="javascript:" title={:L("_ADD_A_NAVIGATION_WITH_DOUBLE_")}  class="add-one"><i class="icon icon-plus"></i></a>
+                <a href="javascript:" title={:L("_REMOVE_THIS_NAVIGATION_WITH_DOUBLE_")} class="remove-li"><i class="icon icon-remove"></i></a>
+                <a href="javascript:" title={:L("_MOBILE_NAVIGATION_SORT_WITH_DOUBLE_")}><i class="icon icon-move sort-handle-1"></i></a>
+            </div>
+            <div class='pull-left color-chose hide' title='选择图标颜色'>
+                <input  name="nav[icon_color][]" class='simple_color_callback' value="#000000"/>
+                <div>图标颜色</div>
+            </div>
+            <div class='pull-left color-chose hide' title='选择文字颜色'>
+                <input name="nav[title_color][]" class='simple_color_callback' value="#000000"/>
+                <div>文字颜色</div>
+            </div>
+            <div class='pull-left band-text'>
+                <input name="nav[remark][]" class="form-control remark" placeholder="备注信息"  value="{$module[0].summary}">
+            </div>
+            <div class='pull-right status-view'>
+                <input name="nav[status][]" class="status_input" value="1" style="display: none;">
+                <label title='是否启用'>
+                    <input class="status" type="checkbox" value="1" checked>开启
+                </label>
+            </div>
+            <div class='pull-right new-blank' style="display:none">
+                <input name="nav[target][]" class="target_input" value="0">
+                <label title={:L("_THE_NEW_WINDOW_OPENS_WITH_DOUBLE_")}> <input class="target" type="checkbox" value="1">{:L("_NEW_WINDOW_OPENS_")}</label>
+            </div>
+        </li>
+    </div>
+</block>
+
+<block name="script">
+    <script src="__JS__/jquery.simple-color.js"></script>
+    <script src="__BTS__/plugins/zui.js"></script>
+    <script src="__ROOT__/Application/Api/View/default/Api/navctrl.js"></script>
+    <link href="__PUBLIC__/static/os-icon/select-os-icon.css" rel="stylesheet">
+    <script src="__STATIC__/os-icon/select-os-icon.js"></script>
+    <script>
+        $(function(){
+            $('.select-os-icon').select_os_icon();
+        });
+    </script>
+</block>

@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>deleteAnonymousId?anonymous_id=keyId("anonymous_id")
