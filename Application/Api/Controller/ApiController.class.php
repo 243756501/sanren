@@ -16,14 +16,12 @@ class ApiController extends AdminController
         $this->tabName = C( 'db_prefix' );
     }
 
-
     public function index()
     {
         $this->redirect('config');
         $this->navCtrl();
         $this->anonymous();
     }
-
     public function config()
     {
         $meduleMod = M('Module');
@@ -71,7 +69,7 @@ class ApiController extends AdminController
    */
     public  function deleteAnonymousId($id)
     {
-        D('anonymous')->where('id='.$id)->delete();
+        D('anonymous')->where(array('id'=>$id))->delete();
         $this->redirect('anonymous');
     }
     public function addAnonymousId()
@@ -80,14 +78,21 @@ class ApiController extends AdminController
         {
             $data['uid'] = I('post.uid', '', 'intval');
             if($data['uid']){
-                $is_val=D('anonymous')->where('uid='.$data[uid])->select();
-                if($is_val)
-                {
-                    $this->error('该用户id已经存在');
-                    return;
+                $is_val=D('anonymous')->where(array('uid'=>$data['uid']))->select();
+                $is_member=D('member')->where(array('uid'=>$data['uid']))->select();
+                if($is_member){
+                    if($is_val)
+                    {
+                        $this->error('该用户id已经存在');
+                        return;
+                    }
+                    D('anonymous')->add($data);
+                    $this->success('新增成功！',U('anonymous'));
                 }
-                D('anonymous')->add($data);
-                $this->success('新增成功！',U('anonymous'));
+                else
+                {
+                    $this->error('');
+                }
             }
             else if($data['uid']=="")
             {

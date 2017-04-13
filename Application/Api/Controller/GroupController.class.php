@@ -320,6 +320,128 @@ class GroupController extends BaseController
 
     }
 
+    public function insertPostComm($postId,$commdata,$time)
+    {
+        $mid = getrandomId();
+        $atime=getrandomTime($time);
+        $commdata=json_decode($commdata,true)['data'];
+        for($i=0;$i<count($commdata);$i++)
+        {
+            $atime=getrandomTime($atime);
+            $aPostId = $postId;
+            $map['status'] = 1;
+            $aPostId && $map['post_id'] = $aPostId;
+            if (!$aPostId) {
+                $this->apiError('帖子不存在');
+            }
+            $aContent = $commdata[$i]["content"];
+            $uid = D('Group/GroupPost')->where(array('id' => $aPostId))->field('uid')->select();
+            $uid = array_column($uid, 'uid');
+            $data = array('post_id' => $aPostId, 'content' => text($aContent), 'status' => '1', 'update_time' => time(), 'create_time' => $atime, 'uid' => $mid);
+            $result = D('Group/GroupPostReply')->add($data);
+
+            $reply = D('Group/GroupPostReply')->where(array('id' => $result))->find();
+            preg_match_all("/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg|\.png]))[\'|\"].*?[\/]?>/", $reply['content'], $arr); //匹配所有的图片
+            $reply['imgList'] = $arr[1];
+            $reply ['user'] = D('Api/User')->getUserSimpleInfo($mid);
+
+            $reply['toReplyList'] = array();
+
+            if (in_array($reply['uid'], $uid)) {
+                $val['is_landlord'] = '1';
+            } else {
+                $val['is_landlord'] = '0';
+            }
+
+            //增加活跃度
+            $group = M('GroupPost')->where(array('id'=>$reply['post_id']))->find();
+            M('Group')->where(array('id' => $group['group_id']))->setInc('activity');
+            M('GroupMember')->where(array('group_id' =>  $group['group_id'], 'uid' => is_login()))->setInc('activity');
+            $groupPostModel =  M('GroupPost');
+            //增加帖子的回复数
+            $groupPostModel->where(array('id' => $aPostId))->setInc('reply_count');
+            //更新最后回复时间
+            $groupPostModel->where(array('id' => $aPostId))->setField('last_reply_time', time());
+        }
+    }
+
+    public function insertPost()
+    {
+        $mid = getrandomId();
+        $acomm=I_POST('comment','text');
+        $time=getrandomTime();
+        $aGroupId = I_POST('group_id', 0, 'intval');
+        $aPostId = I('get.id', 0, 'intval');
+        $aTitle = I_POST('title', 'op_t');
+        $aContent = I_POST('content', 'op_h');
+        $aCategory = I_POST('cate_id', 'intval');
+        $attach_id = I_POST('attach_id', 'op_t');
+        $attach_ids = explode(',', $attach_id);
+        foreach ($attach_ids as $k => $v) {
+            $aContent .= "<p><img src='" . get_cover($v, 'path') . "'/></p>";
+        }
+        unset($v);
+
+        $aContent = str_replace("\\", '', $aContent);
+
+        //判断是不是编辑模式
+        $isEdit = $aPostId ? true : false;
+
+        if (empty($aGroupId)) {
+            $this->apiError('请选择帖子所在的群组');
+        }
+        if (empty($aTitle)) {
+            $this->apiError('请填写帖子标题');
+        }
+        if (empty($aContent)) {
+            $this->apiError('请填写帖子内容');
+        }
+        $model = D('Group/GroupPost');
+        $cover = get_pic($aContent);
+        $cover = $cover == null ? '' : $cover;
+        $len = modC('SUMMARY_LENGTH', 50);
+        if ($isEdit) {
+            $data = array('id' => $aPostId, 'title' => $aTitle, 'summary' => mb_substr(text($aContent), 0, $len, 'utf-8'), 'cover' => $cover, 'status' => '1', 'update_time' => $time, 'content' => $aContent, 'parse' => 0, 'group_id' => $aGroupId, 'cate_id' => $aCategory);
+            $result = $model->save($data);
+            //添加到最新动态
+            $dynamic['group_id'] = $aGroupId;
+            $dynamic['uid'] = $mid;
+            $dynamic['type'] = 'update_post';
+            $dynamic['row_id'] = $aPostId;
+            D('GroupDynamic')->add($dynamic);
+            if (!$result) {
+                $this->apiError('编辑失败：' . $model->getError());
+            }
+        } else {
+            $data = array('uid' => $mid, 'title' => $aTitle, 'summary' => mb_substr(text($aContent), 0, $len, 'utf-8'), 'cover' => $cover, 'status' => '1', 'create_time' => $time, 'update_time' => getrandomTime(), 'content' => $aContent, 'parse' => 0, 'group_id' => $aGroupId, 'cate_id' => $aCategory);
+            $result = $model->add($data);
+            if (!$result) {
+                $this->apiError('发表失败。');
+            }
+            $aPostId = $result;
+            //添加到最新动态
+            $dynamic['group_id'] = $aGroupId;
+            $dynamic['group_id'] = $aGroupId;
+            $dynamic['uid'] = $mid;
+            $dynamic['type'] = 'post';
+            $dynamic['row_id'] = $aPostId;
+            D('Group/GroupDynamic')->add($dynamic);
+            //增加活跃度
+            D('Group/Group')->where(array('id' => $aGroupId))->setInc('activity');
+            D('Group/Group')->where(array('id' => $aGroupId))->setInc('post_count');
+            D('Group/GroupMember')->where(array('group_id' => $aGroupId, 'uid' => $mid))->setInc('activity');
+            $this->insertPostComm($result,$acomm,$time);
+        }
+        //显示成功消息
+        $message = $isEdit ? '编辑成功。' : '发表成功。' . cookie('score_tip');
+        //返回成功消息
+        //实现发布帖子发布图片微博(公共内容)
+        $post = D('Api/group')->getPost($aPostId);
+        $group = D('group/group')->where(array('id' => $post ['group_id']))->find();
+        $this->sendWeibo($aPostId, $isEdit, $group);
+        $this->apiSuccess($message, $post);
+    }
+
     //发布或编辑帖子
     public function sendPost()
     {

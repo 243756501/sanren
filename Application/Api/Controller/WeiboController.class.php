@@ -60,13 +60,196 @@ class WeiboController extends BaseController
         $this->ajaxSuccess($crowdInfo);
     }
 
+    /*
+     * 插入微博评论
+     */
+    public function  insertWeiboComm($weiboId,$subtime,$commdata){
+        $mid=getrandomId();
+        $atime=$subtime;
+        $commdata=json_decode($commdata,true)['data'];
+        $aWeiboId=$weiboId;
+        for($i=0;$i<count($commdata);$i++)
+        {
+            $atime=getrandomTime($atime);
+            $aContent=$commdata[$i]["content"];
+            $aCommentId=$commdata[$i]["to_comment_id"];
+            if(!$aCommentId)
+            {
+                $aCommentId=0;
+            }
+            $weiboModel = D('Api/Weibo');
+            if (empty($aContent)) {
+                $this->apiError('评论内容不能为空。');
+            }
+
+            $comment_id = $weiboModel->sendranComment($aWeiboId, $aContent, $aCommentId, $mid,$atime); //发布评论
+
+            if (!$comment_id) {
+                $this->apiError('添加数据库失败！');
+            }
+            D('Weibo/WeiboCache')->cleanCache($aWeiboId);
+            //行为日志
+            action_log('add_weibo_comment', 'weibo_comment', $comment_id, $mid);
+
+            //通知微博作者
+            $weibo = $weiboModel->getWeibo($aWeiboId,$mid);
+            $weiboModel->sendCommentMessage($weibo['uid'], $aWeiboId, "评论内容：$aContent", $mid);
+
+
+            //通知回复的人
+
+            $toComment = $weiboModel->getComment($aCommentId);
+            if ($toComment['uid'] != $weibo['uid']) {
+                $weiboModel->sendCommentMessage($toComment['uid'], $aWeiboId, "回复内容：$aContent", $mid);
+            }
+            $userList = get_at_uids($aContent);
+            $weiboModel->sendAtMessage($userList, $aWeiboId, $aContent, $mid);
+
+            //推送功能
+            $userList = array_merge(array($weibo['uid']),$userList,array($toComment['uid']));
+            $userList = array_filter($userList);
+            $pushData = array('mod'=>'weibo','type' => 'os_reply','arg' => $weibo['id'],'content' => mb_substr(fmat_at_text($aContent),0,50));
+//        $userList = array(168,7082);
+            igetuiPush($userList,$pushData);
+        }
+    }
+    /*
+     * 插入微博及评论
+     */
+    public function insertWeibo(){
+        $mid=getrandomId();
+        $acomm=I_POST('comment','text');
+        $aContent = I_POST('content','html');
+        $aFrom = I_POST('from', 'text');
+        $aCover = I_POST('cover', 'intval');
+        $aTitle = I_POST('title', 'text');
+        $aExtra = I_POST('extra', 'text');
+        $aFrom = get_from($aFrom);
+        $aType = I_POST('type', 'text');
+        $aCrowdId = POST_I('crowd_id', 'intval',0);
+        $aGeolocation = POST_I('geolocation', 'text');
+        $weiboModel = D('Api/Weibo');
+        $geolocationId = D('Api/User')->addGeolocation($aGeolocation,$mid);
+        //权限判断
+//        $this->ApiCheckAuth('Weibo/Index/doSend', -1, '您无微博发布权限。');
+        //圈子发布权限判断
+        if($aType == 'crowd'){
+            if(!$weiboModel->checkSendAuthCrowd($aCrowdId,$mid)){
+                $this->apiError('没有圈子发布微博的权限');
+            }
+        }
+
+        if (empty($aContent)) {
+            $this->apiError('发布内容不能为空。');
+        }
+
+        if($aType == 'long_weibo'){
+            if(empty($aTitle)){
+                $this->apiError('文章标题不能为空。');
+            }
+            if(mb_strlen($aTitle) >100){
+                $this->apiError('文章标题长度不能高于100');
+            }
+            if(mb_strlen($aContent,'utf-8') < 50){
+                $this->apiError('内容长度不能低于50');
+            }
+        }else{
+            if(mb_strlen($aContent,'utf-8')>modC('WEIBO_NUM', 140, 'WEIBO')){
+                $this->apiError('微博内容过长');
+            }
+        }
+
+        // 行为限制
+        $return = check_action_limit('add_weibo', 'weibo', 0, $mid, true);
+        if ($return && !$return['state']) {
+            $this->apiError($return['info']);
+        }
+        $content=parse_at_app_users($aContent);
+
+        // todo 判断各种类型参数的判断
+        $feed_data = json_decode($aExtra, true);
+        if($aType == 'image' ||$aType == 'voice'){
+            if (empty($feed_data['attach_ids'])) {
+                $this->apiError('请上传附件！');
+            }
+        }
+
+        // 执行发布，写入数据库
+        $weibo_content=$aContent;
+        $weiboTopicModel=D('Weibo/Topic');
+        $weiboTopicLink=$weiboTopicModel->addTopic($weibo_content);
+        $subtime=getrandomTime();
+        $data = array('from' => $aFrom, 'uid' => $mid, 'create_time' => $subtime, 'type' => $aType, 'status' => 1, 'content' => $weibo_content, 'data' => serialize($feed_data),'geolocation_id'=>$geolocationId,'crowd_id'=>$aCrowdId);
+        $weibo_id = $weiboModel->sendWeibo($data);
+        if (!$weibo_id) {
+            $this->apiError('发布失败！');
+        }
+        if($aType == 'long_weibo'){
+            $longWeibo['weibo_id']=$weibo_id;
+            $longWeibo['long_content']=$weibo_content;
+            $longWeibo['title']= $aTitle;
+            $longWeibo['cover']= $aCover;
+            $longId = M('WeiboLong')->add($longWeibo);
+            if(!$longId){
+                D('Weibo/Weibo')->deleteWeibo($weibo_id);
+                $this->apiError('发布失败！');
+            }
+        }
+        if (count($weiboTopicLink)) {
+            foreach ($weiboTopicLink as &$val) {
+                $val['weibo_id'] = $weibo_id;
+            }
+            unset($val);
+            D('Weibo/WeiboTopicLink')->addDatas($weiboTopicLink);
+        }
+        //行为日志
+
+        action_log('add_weibo', 'weibo', $weibo_id,  $this->isLogin());
+        //处理@信息并发送消息
+        $atUsers = get_at_uids($aContent);
+
+        $my_username = get_nickname( $mid);
+        $title = $my_username . '@了您';
+        foreach ($atUsers as &$uid) {
+            $message = '内容：' . $content;
+            $messageType = 1;
+            D('Common/Message')->sendMessage($uid, $title, $message, 'Weibo/Index/weiboDetail', array('id' => $weibo_id), $mid, $messageType);
+        }
+        unset($uid);
+        //@的推送功能
+        $atUsers = array_filter($atUsers);
+        $pushData['content'] = 'weibo';
+        $pushData['payload'] = array('type' => 'os_at','info' => $weibo_id,'content' => fmat_at_text($aContent));
+        igetuiPush($atUsers,$pushData);     //使用的单推方法
+
+        clean_query_user_cache($mid, array('weibocount'));
+
+        // 向关注的人推送
+        $fuids= M('Follow')->where(array('follow_who'=>$mid))->select();
+        $fuids = array_column($fuids,'who_follow');
+        $intersectArr = array_intersect($atUsers,$fuids);
+        $fuids = array_diff($fuids,$intersectArr);      //如果前面@过的用户，这里则不推送
+
+        $pushData['content'] = 'weibo';
+        $pushData['payload'] = array('type' => 'os_send','info' => $weibo_id,'content' => $aContent);
+        igetuiPush($fuids,$pushData);     //使用的单推方法
+
+        $weibo = $weiboModel->getWeibo($weibo_id,$mid);
+        if($weibo){
+            $this->insertWeiboComm($weibo_id,$subtime,$acomm);
+            $this->apiSuccess('发布微博成功',$weibo);
+        }else
+        {
+            $this->apiError('发布失败');
+        }
+    }
+
     /**发送微博
      *
      */
     public function sendWeibo()
     {
-//        $mid = $this->requireIsLogin(); //当前用户uid
-        $mid=$this-> getrandomId();
+        $mid = $this->requireIsLogin(); //当前用户uid
         $aContent = I_POST('content','html');
         $aFrom = I_POST('from', 'text');
         $aCover = I_POST('cover', 'intval');

@@ -214,6 +214,22 @@ class WeiboModel extends Model
         }
     }
 
+    public function sendranComment($weibo_id, $content, $comment_id = 0, $mid = 0,$time=0)
+    {
+        $commentModel = M('weibo_comment');
+        $result = $commentModel->add(array('uid' => $mid, 'status' => 1, 'content' => $content, 'weibo_id' => $weibo_id, 'to_comment_id' => $comment_id, 'create_time' => $time));
+        if (!$result) {
+            return false;
+        } else {
+            //增加微博评论数量
+            D('Weibo')->where(array('id' => $weibo_id))->setInc('comment_count');
+            D('Weibo/WeiboCache')->cleanCache($weibo_id);
+        }
+
+
+        S('weibo_' . $weibo_id, null);
+        return $result;
+    }
 
     public function sendComment($weibo_id, $content, $comment_id = 0, $mid = 0)
     {

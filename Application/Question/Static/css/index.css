@@ -1,0 +1,898 @@
+.boxShadowBorder {
+  background: #fff;
+  padding-top: 20px;
+}
+.aline {
+  border-bottom: 1px solid white;
+  border-top: 1px solid #ccc;
+}
+.common_block_border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.common_block_title {
+  margin-top: 0;
+}
+.question_img {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 2px;
+  border: 1px solid #eee;
+  margin: 10px;
+}
+.question_list .one_question {
+  position: relative;
+  padding: 0;
+  outline: 0;
+  margin: 6px 0 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.question_list .one_question a {
+  text-decoration: none;
+}
+.question_list .one_question .question-title {
+  background: #EAEAEA;
+  line-height: 38px;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+.question_list .one_question .question-title .lead-word {
+  display: inline-block;
+  background: green;
+  color: white;
+  width: 38px;
+  text-align: center;
+}
+.question_list .one_question .question-title .words {
+  margin-left: 10px;
+}
+.question_list .one_question .q_black_info {
+  position: relative;
+  margin-bottom: 10px;
+  color: #999;
+}
+.question_list .one_question .q_detail {
+  padding: 2px 0px;
+  margin: 5px 0;
+}
+.question_list .one_question .q_detail ins {
+  text-decoration: none;
+  padding: 3px 0;
+  color: #333;
+  line-height: 25px;
+}
+.question_list .one_question .best_answer .a_title {
+  margin: 23px 0 13px;
+}
+.question_list .one_question .best_answer .a_content {
+  line-height: 24px;
+  background: #F9F9F9;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+}
+.question_list .one_question .best_answer .a_content ins {
+  text-decoration: initial;
+  color: #7E7E7E;
+}
+.question_detail .question {
+  position: relative;
+  padding: 0;
+  outline: 0;
+  margin: 6px 0 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.question_detail .question a {
+  color: #259;
+  text-decoration: none;
+}
+.question_detail .question .question-title {
+  line-height: 38px;
+  padding: 0;
+  margin: 0 0 15px 0;
+  border-bottom: 2px solid #4f8ad0;
+}
+.question_detail .question .question-title .lead-word {
+  display: inline-block;
+  background: #4f8ad0;
+  color: white;
+  width: 42px;
+  text-align: center;
+}
+.question_detail .question .question-title .words {
+  margin-left: 10px;
+}
+.question_detail .question .q_black_info {
+  position: relative;
+  margin-bottom: 5px;
+  color: #999;
+}
+.question_detail .question .q_detail {
+  border-left: 3px solid #DDD;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.question_detail .question .q_detail ins {
+  text-decoration: none;
+  padding: 3px 0;
+  line-height: 25px;
+}
+.question_detail .question .best_answer .a_title {
+  margin: 23px 0 13px;
+}
+.question_detail .question .best_answer .a_content {
+  line-height: 24px;
+  background: #F9F9F9;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+}
+.question_detail .question .best_answer .a_content ins {
+  text-decoration: initial;
+  color: #7E7E7E;
+}
+.questions .common_block_border {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.questions .tags a {
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  border: none;
+  background: #efefef;
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+.questions .tags a.active {
+  background: #666;
+  color: #fff !important;
+}
+.dtWrap {
+  background-color: #ffffff;
+  padding: 10px 10px 0;
+}
+.dtWrap .dtTop {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+.dtWrap .dtTop .dtName {
+  display: flex;
+  align-items: center;
+}
+.dtWrap .dtTop .dtName i {
+  font-size: 25px;
+  color: #666;
+}
+.dtWrap .dtTop .dtName p {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  color: #666;
+}
+.dtWrap .dtTop .dtType {
+  color: red;
+}
+.dtWrap .dtContent {
+  padding: 10px 0;
+}
+.dtWrap .dtContent .dtInfo {
+  font-size: 12px;
+}
+.dtWrap .dtContent .dtInfo .qtLine {
+  display: inline-block;
+  border: 1px solid #eee;
+  height: 20px;
+  margin: 0 10px;
+  vertical-align: bottom;
+}
+.dtWrap .dtContent .dtInfo span {
+  color: #777;
+}
+.dtWrap .dtContent .dtInfo .tags span {
+  margin: 0 5px;
+}
+.dtWrap .dtContent .dtMain {
+  margin: 10px 0;
+  color: #666;
+}
+.dtWrap .dtContent .dtBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dtWrap .dtContent .dtBottom .invite a {
+  color: #9fadc7;
+}
+.dtWrap .dtContent .dtBottom .invite a i {
+  margin-right: 5px;
+}
+.dtWrap .dtContent .dtBottom .invite .police {
+  margin-left: 20px;
+}
+.dtAnswer {
+  border-top: 1px solid #eee;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.dtAnswer .answer .one_answer {
+  margin: 10px 0;
+  border-bottom: 1px dashed #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.dtAnswer .answer .one_answer:last-child {
+  border: none;
+}
+.dtAnswer .answer .one_answer .support_block {
+  margin-right: 10px;
+}
+.dtAnswer .answer .one_answer .support_block .butt {
+  display: block;
+  color: #A8C9F4;
+  line-height: 17px;
+  width: 45px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  background: #eff6fa;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+.dtAnswer .answer .one_answer .support_block .butt.can_do:hover,
+.dtAnswer .answer .one_answer .support_block .butt.already_do {
+  background: #A8C9F4;
+  color: #fff;
+}
+.dtAnswer .answer .one_answer .support_block .butt .icon {
+  font-size: 17px;
+}
+.dtAnswer .answer .one_answer .a_info {
+  position: relative;
+}
+.dtAnswer .answer .one_answer .a_info .dtIcon {
+  position: absolute;
+  color: red;
+  font-size: 60px;
+  right: 15px;
+  transform: rotate(-40deg);
+  opacity: .8;
+}
+.dtAnswer .answer .one_answer .a_info .answer_user {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+.dtAnswer .answer .one_answer .a_info .answer_user .cover {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.dtAnswer .answer .one_answer .a_info .answer_user a {
+  color: #333;
+}
+.dtAnswer .answer .one_answer .a_info .a_content {
+  padding: 10px 0;
+}
+.dtAnswer .answer .one_answer .a_info .a_content p {
+  margin: 0;
+}
+.dtAnswer .answer .one_answer .a_info .q_black_info {
+  position: relative;
+  margin-bottom: 5px;
+  color: #999;
+  font-size: 12px;
+}
+.dtAnswer .answer .one_answer .a_info .q_black_info span:not(.time) {
+  margin-left: 20px;
+}
+.dtAnswer .answer .one_answer .a_info .q_black_info span:nth-child(2) {
+  color: #19bca1;
+}
+.dtAnswer .answer .one_answer .a_info .q_black_info .reward {
+  display: inline-block;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  padding: 1px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dtAnswer .answer .one_answer .btnGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+}
+.dtAnswer .answer .one_answer .btnGroup p {
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 33px;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.dtAnswer .answer .one_answer .btnGroup p:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dtAnswer .answer .one_answer .btnGroup p:last-child {
+  border-color: #339933;
+  color: #339933;
+}
+.dtSend {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+.dtSelf {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+}
+.dtSelf .dtAvatar {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.dtSelf .dtInfo a {
+  font-size: 16px;
+  color: #666;
+}
+.dtSelf .dtInfo p {
+  color: #999;
+  margin: 5px 0 0;
+}
+.dtSelf .dtInfo p span:last-child {
+  margin-left: 10px;
+}
+.dtLink {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.dtLink ul {
+  padding: 10px;
+}
+.dtLink ul li {
+  line-height: 30px;
+}
+.rewardBox {
+  padding: 10px 20px;
+}
+.rewardBox p {
+  margin-bottom: 20px;
+}
+.rewardBox .score {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rewardBox .score li {
+  border: 1px solid #ff6600;
+  padding: 5px 20px;
+  color: #ff6600;
+  border-radius: 3px;
+}
+.rewardBox .score .active {
+  color: #19bca1;
+  border-color: #19bca1;
+}
+.rewardBox .yesNo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.rewardBox .yesNo .ynBtn {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+.rewardBox .yesNo .yes {
+  background-color: #19bca1;
+  color: #ffffff;
+  border: 1px solid #19bca1;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.rewardBox .yesNo .yes:hover {
+  background-color: transparent;
+  color: #19bca1;
+  border-style: dashed;
+  box-shadow: 0 0 10px rgba(25, 188, 161, 0.1);
+}
+.rewardBox .yesNo .no {
+  border: 1px dashed #777;
+  margin-left: 20px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.rewardBox .yesNo .no:hover {
+  background-color: #e62121;
+  color: #ffffff;
+  border-color: #e62121;
+  box-shadow: 0 0 10px rgba(230, 33, 33, 0.1);
+}
+.inviteBox {
+  padding: 20px 0;
+}
+.inviteBox p {
+  margin: 0;
+}
+.inviteBox .intHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+.inviteBox .intHead p {
+  color: #9fadc7;
+}
+.inviteBox .intHead .intSearch {
+  height: 35px;
+  width: 210px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.inviteBox .intHead .intSearch input {
+  padding: 0 10px;
+  outline: none;
+  border: none;
+}
+.inviteBox .intHead .intSearch i {
+  font-size: 18px;
+  color: #9fadc7;
+  display: inline-block;
+  height: 100%;
+  line-height: 35px;
+}
+.inviteBox .qtUser {
+  padding: 0 20px;
+  max-height: 680px;
+  overflow-y: scroll;
+}
+.inviteBox .qtUser li {
+  padding: 20px 0;
+  border-bottom: 1px dashed #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.inviteBox .qtUser li:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.inviteBox .qtUser li .userLeft {
+  display: flex;
+}
+.inviteBox .qtUser li .userLeft .avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.inviteBox .qtUser li .userLeft .info p {
+  margin-top: 5px;
+}
+.inviteBox .qtUser li .userLeft .info .name {
+  font-size: 16px;
+  color: #333;
+}
+.inviteBox .qtUser li .userLeft .info .intro {
+  color: #666;
+  max-width: 630px;
+}
+.inviteBox .qtUser li .userLeft .info .skilled {
+  color: #9fadc7;
+  font-size: 13px;
+}
+.inviteBox .qtUser li .userRight {
+  display: flex;
+  align-items: center;
+}
+.inviteBox .qtUser li .userRight .btnInvite {
+  padding: 5px 20px;
+  border: 1px solid #19bca1;
+  color: #19bca1;
+  border-radius: 5px;
+  display: inline-block;
+}
+.tpWrap {
+  background-color: #ffffff;
+}
+.tpWrap .qtHead {
+  padding: 0 20px;
+  font-size: 16px;
+}
+.tpWrap .tpList {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tpWrap .tpList a {
+  display: inline-block;
+  width: 50%;
+}
+.tpWrap .tpList .tpOne {
+  border-bottom: 1px solid #eee;
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.tpWrap .tpList .tpOne .tpCover {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.tpWrap .tpList .tpOne .tpInfo .name {
+  background-color: #99cfff;
+  color: #ffffff;
+  padding: 1px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.tpWrap .tpList .tpOne .tpInfo p {
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 5px;
+  max-width: 225px;
+}
+.tpWrap .tpList .lastChild {
+  border-bottom-color: transparent!important;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#main-container {
+  margin-top: 0;
+  font-size: 14px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comBox {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.flexWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.flexCent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.state {
+  border: 1px solid #19bca1;
+  border-radius: 5px;
+  padding: 1px 10px;
+  color: #19bca1;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.qtWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.qtWrap .qtLeft {
+  width: 820px;
+}
+.qtWrap .qtLeft .qtTop {
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin: 0;
+}
+.qtWrap .qtLeft .qtTop .tags {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.qtWrap .qtLeft .qtTop .tags a {
+  padding-left: 20px;
+  color: #666;
+}
+.qtWrap .qtLeft .qtTop .tags a:hover {
+  color: #19bca1;
+}
+.qtWrap .qtLeft .qtTop .tags a:first-child {
+  color: #333;
+}
+.qtWrap .qtLeft .qtTop .qtSearch {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.qtWrap .qtLeft .qtTop .qtHot {
+  display: flex;
+  padding: 0 20px 10px 10px;
+}
+.qtWrap .qtLeft .qtTop .qtHot li {
+  padding: 0 10px;
+}
+.qtWrap .qtLeft .qtTop .qtHot li a:hover {
+  color: #19bca1;
+}
+.qtWrap .qtLeft .qtList {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.qtWrap .qtLeft .qtList .qtTab {
+  background-color: #F6F7FB;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.qtWrap .qtLeft .qtList .qtTab li {
+  line-height: 40px;
+  padding: 0 20px;
+}
+.qtWrap .qtLeft .qtList .qtTab li a {
+  color: #333;
+  font-size: 15px;
+}
+.qtWrap .qtLeft .qtList .qtTab .active {
+  background-color: #ffffff;
+}
+.qtWrap .qtLeft .qtList .qtContent {
+  padding: 10px 20px;
+}
+.qtWrap .qtRight {
+  width: 300px;
+}
+.qtWrap .qtRight .qtCard {
+  background-color: #ffffff;
+}
+.qtWrap .qtRight .qtCard .cdTop {
+  padding: 20px;
+  text-align: center;
+}
+.qtWrap .qtRight .qtCard .cdTop .slogan {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.qtWrap .qtRight .qtCard .cdTop .avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto 10px;
+}
+.qtWrap .qtRight .qtCard .cdTop .name {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+  display: block;
+}
+.qtWrap .qtRight .qtCard .cdTop .name:hover {
+  color: #19bca1;
+}
+.qtWrap .qtRight .qtCard .cdTop .number {
+  color: #666;
+  margin-bottom: 0;
+}
+.qtWrap .qtRight .qtCard .cdTop .number span {
+  font-weight: bold;
+}
+.qtWrap .qtRight .qtCard .cdBottom {
+  background-color: #19bca1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.qtWrap .qtRight .qtCard .cdBottom .btBox {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.qtWrap .qtRight .qtCard .cdBottom .btBox p {
+  margin: 0;
+}
+.qtWrap .qtRight .qtCard .cdBottom .btBox p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.qtWrap .qtRight .hots {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.qtWrap .qtRight .hots .qtSome {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.qtWrap .qtRight .hots .qtSome a {
+  display: inline-block;
+  border: 1px solid #eee;
+  color: #999;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 10px 10px 0;
+}
+.qtWrap .qtRight .hots .qtSome a:hover {
+  border-color: #19bca1;
+  color: #19bca1;
+}
+.qtWrap .qtRight .ardor {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.qtWrap .qtRight .ardor .qtList {
+  padding: 0 10px 10px;
+}
+.qtWrap .qtRight .ardor .qtList li {
+  margin: 10px 0;
+  display: flex;
+}
+.qtWrap .qtRight .ardor .qtList li:last-child {
+  margin-bottom: 0;
+}
+.qtWrap .qtRight .ardor .qtList li .avatar {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-right: 15px;
+}
+.qtWrap .qtRight .ardor .qtList li .info a {
+  font-weight: 600;
+  color: #333;
+}
+.qtWrap .qtRight .ardor .qtList li .info p {
+  margin-bottom: 0;
+  margin-top: 5px;
+  color: #999;
+  font-size: 13px;
+}
+.iptWrap {
+  width: 660px;
+  display: flex;
+  justify-content: space-between;
+}
+.iptWrap input {
+  width: 590px;
+  height: 40px;
+  border: 1px solid #19bca1;
+  padding: 0 10px;
+  outline: none;
+}
+.iptWrap .btSearch {
+  border: none;
+  width: 70px;
+  height: 40px;
+  background-color: #19bca1;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 3px 3px 0;
+}
+.qtAsk {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #19bca1;
+  color: #19bca1;
+}
+.qtHead {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+.qtOne {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #eee;
+  margin: 10px 0;
+}
+.qtOne:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+.qtOne .left {
+  display: flex;
+}
+.qtOne .left .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.qtOne .left .info .qtTitle {
+  color: #666;
+}
+.qtOne .left .info .btInfo span {
+  color: #999;
+  margin-left: 15px;
+}
+.qtOne .left .info .btInfo .name {
+  margin: 0;
+  color: #666;
+}
+.qtOne .right {
+  text-align: right;
+}
+.qtOne .right .offer {
+  color: red;
+}
+.qtOne .right p {
+  color: #999;
+}
+.qtOne .right p i {
+  margin-right: 8px;
+}
+.qtDialog {
+  padding: 20px;
+  overflow: hidden;
+}
+.qtDialog .iptWrap {
+  width: 557px;
+}
+.qtDialog .iptWrap input {
+  width: 507px;
+}
+.qtDialog .often {
+  margin: 10px 0;
+}
+.qtDialog .often li {
+  margin: 5px 0;
+}
+.qtDialog .often li a {
+  color: #333;
+}
+.qtDialog .haveNo {
+  display: flex;
+  margin: 10px 0 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+.qtDialog .haveNo span {
+  color: #999;
+  margin-right: 10px;
+}
+.qtFilter {
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.doSearch {
+  max-height: 60px!important;
+  overflow: hidden;
+  display: block!important;
+}

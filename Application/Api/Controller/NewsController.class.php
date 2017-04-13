@@ -12,6 +12,70 @@ class NewsController extends BaseController
 
     }
 
+    public function insertNews()
+    {
+        $mid = getrandomId();
+        $time=getrandomTime();
+        $aId = I('get.id', '', 'intval');
+        $title = $aId ? "编辑" : "新增";
+        $NewsModel = D('Api/News');
+        $aId && $data['id'] = $aId;
+        $data['uid'] = $mid;
+        $data['title'] = I_POST('title', 'text');
+        $data['content'] = I_POST('content', 'text');
+        $data['category'] = I_POST('category', 'intval');
+        $data['description'] = I_POST('description', 'text');
+        $data['cover'] = I_POST('cover', 'intval');
+        $data['collection'] = I_POST('collection', 'intval');
+        $data['dead_line'] = I_POST('dead_line', 'text');
+        if ($data['dead_line'] == '') {
+            $data['dead_line'] = 2147483640;
+        } else {
+            $data['dead_line'] = strtotime($data['dead_line']);
+        }
+        $data['source'] = I_POST('source', 'text');
+
+        $position = I('position', 'text');
+        $position = explode(',', $position);
+        $data['sort'] = $data['position'] = $data['view'] = $data['comment'] = $data['collection'] = 0;
+        foreach ($position as $val) {
+            $data['position'] += intval($val);
+        }
+        $category = D('News/NewsCategory')->where(array('status' => 1, 'id' => $data['category']))->find();
+        if ($category) {
+            if ($category['can_post']) {
+                if ($category['need_audit'] && !check_auth('Admin/News/setNewsStatus')) {
+                    $data['status'] = 2;
+                } else {
+                    $data['status'] = 1;
+                }
+            } else {
+                $this->apiError('该分类不能投稿！');
+            }
+        } else {
+            $this->apiError('该分类不存在或被禁用！');
+        }
+        $data['template'] = '';
+
+        $this->_checkOk($data);
+        $result = $NewsModel->editData2($data,$time);
+        if($result) {
+            if ($aId) {
+                $News = D('News/News')->where(array('id' => $aId))->find();
+                if (!$News) {
+                    $this->apiError('数据库无此资讯');
+                }
+            } else {
+                $News = D('News/News')->where(array('id' => $result))->find();
+                if ($News['status'] == 2) {
+                    $this->apiSuccess('发布成功，请等待管理员审核通过！');
+                } else {
+                    $this->apiSuccess('发布成功');
+                }
+            }
+        }
+    }
+
     public function getCategory()
     {
         $aPage = I_POST('page', 'intval');

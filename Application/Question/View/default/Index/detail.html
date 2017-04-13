@@ -1,0 +1,391 @@
+<extend name="Base/common"/>
+<block name="header">
+    <include file="Public/nav"/>
+    <link type="text/css" rel="stylesheet" href="__CSS__/index.css"/>
+    <link type="text/css" rel="stylesheet" href="//at.alicdn.com/t/font_b9rj4a9k6zx2mx6r.css"/>
+</block>
+<block name="body">
+
+    <div class="container" style="min-height: 400px">
+        <!--打赏弹窗-->
+        <div class="modal fade" id="rewardBox">
+            <div class="modal-dialog" style="width: 450px">
+                <div class="modal-content rewardBox">
+                    <p>觉得还不错？打赏一下吧？</p>
+                    <ul class="score">
+                        <li class="active">1元</li>
+                        <li class="">2元</li>
+                        <li class="">3元</li>
+                        <li class="">4元</li>
+                    </ul>
+                    <div class="yesNo">
+                        <a href="" class="ynBtn yes">打赏</a>
+                        <a href="" class="ynBtn no">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--邀请回答弹窗-->
+        <div class="modal fade" id="inviteBox">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content inviteBox">
+                    <div class="intHead">
+                        <p>你可以通过邀请其他用户来更快获得回答</p>
+                        <div class="intSearch">
+                            <input id="s_people" value="" type="text" placeholder="搜索你想邀请的人">
+                            <i class="iconfont icon-search" data-role="do-search"></i>
+                        </div>
+                    </div>
+
+                    <!--搜索结果列表-->
+                    <ul class="qtUser" id="qtResult">
+
+                        <li class="hah" style="display: none">
+                            <div class="userLeft">
+                                <div class="avatar"><img src="__IMG__/aaaa.jpg" alt="用户头像"></div>
+                                <div class="info">
+                                    <a ucard="" href="" class="name">持枪的绅士</a>
+                                    <p class="intro text-more">这是我的个性签名</p>
+                                    <p class="skilled">在话题 <a href="">话题名称</a> 下有 <span>8</span> 个回答</p>
+                                </div>
+                            </div>
+                            <div class="userRight">
+                                <span class="btnInvite">邀请回答</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="dtWrap">
+                    <div class="dtTop">
+                        <div class="dtName">
+                            <i class="iconfont icon-wenti1"></i>
+                            <p>{$question.title}</p>
+                            <span class="state">
+                                <neq name="question.best_answer" value="0">已结题<else/>待回答</neq>
+                            </span>
+                        </div>
+                        <div class="dtType">
+                            悬赏：{$question.score_num}
+                        </div>
+                    </div>
+                    <div class="dtContent">
+                        <div class="dtInfo">
+                            <a target="_blank" ucard="{$question.uid}" href="{$question.user.space_url}">{$question.user.nickname}</a>
+                            <span class="qtLine"></span>
+                            <span>{$question.create_time|friendlyDate}</span>
+                            <span class="qtLine"></span>
+                            <span>{$question.answer_num} 个回答</span>
+                            <span class="qtLine"></span>
+                            <span class="tags">
+                                <i class="iconfont icon-tag"></i>
+                            <a target="_blank" href="{:U('Question/index/questions',array('category'=>$question['category']))}">{$question.category_info.title}</a>
+                            <if condition="$question['audit_info'] neq ''">
+                                {$question.audit_info}
+                            </if>
+                            </span>
+                        </div>
+                        <div class="dtMain">{$question.description|render}</div>
+                        <div class="dtBottom">
+                            <div class="invite">
+                                <a href="" data-toggle="modal" data-position="100px" data-target="#inviteBox"><i class="iconfont icon-xingxing"></i>邀请回答</a>
+                                <!--<a href="" class="police"><i class="iconfont icon-icon_tip_off"></i>举报</a>-->
+                            </div>
+                            <div class="share">{:W('Common/Share/detailShare')}</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dtAnswer">
+                    <div class="answer" data-role="answer-block">
+                        <notempty name="best_answer">
+                            <div class="one_answer clearfix">
+                                <div class="" style="display: flex;width: 550px">
+                                    <div class="support_block">
+                                        <if condition="$best_answer['is_support']||$best_answer['is_oppose']||(is_login() eq $best_answer['uid'])">
+                                            <a title={:L("_SUPPORT_WITH_DOUBLE_")} <eq name="best_answer['is_support']" value="1">class="butt already_do"<else/>class="butt"</eq>>
+                                            <i class="icon icon-thumbs-up"></i>
+                                            <br/>
+                                            <span class="num">{$best_answer.support}</span>
+                                            </a>
+                                            <a title={:L("_OBJECT_NOT_SHOWING_YOUR_NAME_WITH_DOUBLE_")} <eq name="best_answer['is_oppose']" value="1">class="butt already_do"<else/>class="butt"</eq>>
+                                            <span class="num">{$best_answer.oppose}</span>
+                                            <br/>
+                                            <i class="icon icon-thumbs-down"></i>
+                                            </a>
+                                            <else/>
+                                            <a title={:L("_SUPPORT_WITH_DOUBLE_")} class="butt can_do" data-role="answer-support" data-id="{$best_answer.id}">
+                                                <i class="icon icon-thumbs-up"></i>
+                                                <br/>
+                                                <span class="num">{$best_answer.support}</span>
+                                            </a>
+                                            <a title={:L("_OBJECT_NOT_SHOWING_YOUR_NAME_WITH_DOUBLE_")} class="butt can_do" data-role="answer-oppose" data-id="{$best_answer.id}">
+                                                <span class="num">{$best_answer.oppose}</span>
+                                                <br/>
+                                                <i class="icon icon-thumbs-down"></i>
+                                            </a>
+                                        </if>
+                                    </div>
+                                    <div class="a_info">
+                                        <i class="iconfont icon-zuijia dtIcon"></i>
+                                        <div class="answer_user">
+                                            <div class="cover"><img src="{$best_answer.user.avatar128}" alt=""></div>
+                                            <a ucard="{$best_answer.uid}" href="{$best_answer.user.space_url}">{$best_answer.user.nickname}</a>
+                                        </div>
+
+                                        <div class="a_content">{$best_answer.content|render}</div>
+
+                                        <div class="q_black_info">
+                                            <span class="time"> 发布于：{$best_answer.create_time|friendlyDate}</span>
+                                            <span>追问 15+</span>
+                                            <span class="reward" data-toggle="modal" data-target="#rewardBox">打赏</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btnGroup">
+                                    <if condition="(check_auth('Question/Answer/setBest',-1)|| ($question['uid'] eq is_login())) && !$question['best_answer']">
+                                        <p data-role="set-best" data-id="{$answer['id']}" data-question-id="{$question.id}">采纳</p>
+                                    </if>
+                                    <if condition="$question['uid'] eq is_login()">
+                                        <p>追问</p>
+                                    </if>
+                                </div>
+                            </div>
+                        </notempty>
+
+                        <volist name="list" id="answer">
+                            <include file="Answer/_answer"/>
+                        </volist>
+                    </div>
+                    <div class="text-right">
+                        {:getPagination($totalCount,10)}
+                    </div>
+                </div>
+
+                <div class="dtSend">
+                    <if condition="is_login()">
+                        <if condition="$question.status neq 1">
+                            <p class="text-center text-muted" style="font-size: 3em; padding-top: 2em; padding-bottom: 2em;">
+                                {:L("_THE_PROBLEM_IS_NOT_AUDITED_OR_AUDIT_FAILURE_CAN_NOT_BE_ANSWERED_WITH_WAVE_WITH_SPACE_")}
+                            </p>
+                            <else/>
+                            <php>
+                                $user = query_user(array('avatar128','uid','space_url'));
+                            </php>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <p class="text-center">
+                                        <a href="{$user.space_url}" ucard="{$user.uid}">
+                                            <img src="{$user.avatar128}" width="48px" class="avatar-img"/>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-xs-10">
+                                    <div id="answer_block">
+                                        <form id="answer_form" action="{:U('Question/answer/edit')}" method="post" class="ajax-form">
+                                            <input type="hidden" name="question_id" value="{$question['id']}"/>
+                                            <h4>{:L("_ANSWER_")}</h4>
+
+                                            <p>
+                                                <php>
+                                                    $config="toolbars:[['source','|','bold','italic','underline','fontsize','forecolor','justifyleft','fontfamily','|','map','emotion','insertimage','insertcode']]";
+                                                </php>
+
+                                                {:W('Common/Ueditor/editor',array('myeditor_edit','content','','100%','250px',$config))}
+                                            </p>
+
+                                            <p class="pull-right">
+                                                <input type="button" data-role="reply_button" class="btn btn-primary" value="{:L('_PUBLISH_')}Ctrl+Enter"/>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </if>
+                        <script>
+                            $(function(){
+                                ue_myeditor_edit.addListener("beforeSubmit",function(){
+                                    ue_myeditor_edit.sync();
+                                    $("[data-role=reply_button]").click();
+                                    return false;
+                                })
+                            })
+                        </script>
+
+                        <else/>
+                        <p class="text-center text-muted" style="font-size: 3em; padding-top: 2em; padding-bottom: 2em;">
+                            请<a data-login="quick_login">{:L("_SIGN_IN_")}</a>{:L("_AFTER_ANSWER_")}
+                        </p>
+                    </if>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="dtSelf">
+                    <div class="dtAvatar"><img src="{$question.user.avatar128}" alt=""></div>
+                    <div class="dtInfo">
+                        <a ucard="{$self.uid}" href="{$question.user.space_url}">{$self.nickname}</a>
+                        <p><span>{$question.all_ask_num}提问</span><span>{$question.all_answer_num}回答</span></p>
+                    </div>
+                </div>
+
+                <div class="dtLink">
+                    <p class="qtHead">相关问题</p>
+                    <ul>
+                        <volist name="relevant_question" id="list">
+                            <li>
+                                <a href="{:U('Index/detail',array('id'=>$list['id']))}">{$list.title}</a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <input data-role="question" type="hidden" data-id="{$question.id}" />
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/question.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css"/>
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.post(U('Core/Public/atWhoJson'),{},function(res){
+                atwho_config = {
+                    at: "@",
+                    data: res,
+                    tpl: "<li data-value='[at:${id}]'><img class='avatar-img' style='width:2em;margin-right: 0.6em' src='${avatar32}'/>${nickname}</li>",
+                    show_the_at: true,
+                    search_key: 'search_key',
+                    start_with_space: false
+                };
+                ue_myeditor_edit.addListener( 'ready', function( editor ) {
+                    $(this.document.body).atwho(atwho_config);
+
+                } );
+
+            },'json')
+
+
+
+            ue_myeditor_edit.addListener("beforeSubmit",function(){
+                ue_myeditor_edit.sync();
+                $("#reply_form").submit();
+                return false;
+            })
+
+
+
+            $('.popup-gallery').each(function () { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: '.popup',
+                    type: 'image',
+                    tLoading: 'Loading image #%curr%...',
+                    mainClass: 'mfp-img-mobile',
+                    gallery: {
+                        enabled: true,
+                        navigateByImgClick: true,
+                        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                    },
+                    image: {
+                        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                        titleSrc: function (item) {
+                            /*           return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';*/
+                            return '';
+                        }
+                    }
+                });
+            });
+
+        });
+
+        function delquestion() {
+            if (confirm("你确定要删除此问题吗？")) {
+                var id = "{$question['id']}";
+                var url = "{:U('Question/Index/delQuestion')}";
+                $.post(url, {id: id}, function (msg) {
+                    if (msg.status) {
+                        toast.success(msg.info);
+                        setTimeout(function () {
+                            window.location.href="{:U('question/index/myquestion',array('type'=>q))}";
+                        }, 500);
+                    } else {
+                        toast.error(msg.info);
+                    }
+                }, 'json')
+            }
+        }
+
+        function recommend(){
+
+            var id = "{$question['id']}";
+            var url = "{:U('Question/Index/recommendQuestion')}";
+            $.post(url, {id: id}, function (msg) {
+                if (msg.status) {
+                    toast.success(msg.info);
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 500);
+                } else {
+                    toast.error(msg.info);
+                }
+            }, 'json')
+        }
+
+        $('#inviteBox').on('shown.zui.modal', function() {
+            var $tag = $('#qtResult');
+            var url = U('question/index/getQuestionRank');
+            var li = '';
+            var $container = $('#qtResult');
+            if ($container.find('li').length == '1') {
+                OS_Loading.loading($tag,'loading1');
+                $.post(url,{},function(res){
+                    if (res.status == 1) {
+                        for ( var i in res.info){
+                            var t = res.info[i];
+                            li += '<li>'+
+                                    '<div class="userLeft">'+
+                                    '<div class="avatar"><img src="'+ t.user.avatar128 +'" alt="用户头像"></div>'+
+                                    '<div class="info">'+
+                                    '<a ucard="" href="" class="name">'+ t.user.nickname +'</a>'+
+                                    '<p class="intro text-more">这是我的个性签名</p>'+
+                                    '<p class="skilled">在话题 <a href="">话题名称</a> 下有 <span>8</span> 个回答</p>'+
+                                    '</div>'+
+                                    '</div>'+
+                                    '<div class="userRight">'+
+                                    '<span class="btnInvite" data-role="invite" data-uid="'+ t.user.uid +'">邀请回答</span>'+
+                                    '</div>'+
+                                    '</li>';
+                        }
+                        OS_Loading.remove($tag);
+                        $container.append(li);
+                        $('[data-role="invite"]').click(function(){
+                            var $this = $(this);
+                            var uid = $this.attr('data-uid');
+                            var question = $('[data-role="question"]').attr('data-id');
+                            var url = U('question/index/inviteAnswer');
+                            $.post(url,{uid:uid,question:question},function(res){
+                                if (res.status == 1) {
+                                    toast.success(res.info);
+                                    $this.html('已邀请');
+                                    $this.unbind('click');
+                                }
+                            });
+                        })
+                    }
+                });
+            }
+        })
+    </script>
+</block>

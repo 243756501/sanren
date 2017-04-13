@@ -1,0 +1,100 @@
+<extend name="Base/common"/>
+<block name="header">
+    <include file="Public/nav"/>
+    <link type="text/css" rel="stylesheet" href="__CSS__/index.css"/>
+    <link type="text/css" rel="stylesheet" href="//at.alicdn.com/t/font_b9rj4a9k6zx2mx6r.css"/>
+</block>
+<block name="body">
+    <div class="container" style="min-height: 400px">
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="tpWrap">
+                    <p class="qtHead">话题</p>
+                    <div class="tpList">
+                        <a href="">
+                            <div class="tpOne">
+                                <div class="tpCover"><img src="__IMG__/aaaa.jpg" alt="话题封面"></div>
+                                <div class="tpInfo">
+                                    <p class="name">话题名字</p>
+                                    <p class="text-more"><span>1722 个讨论</span><span>476 个关注</span></p>
+                                    <p class="text-more"><span>7 天新增 3 个讨论</span><span>30 天新增 30 个讨论</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="tpOne">
+                                <div class="tpCover"><img src="__IMG__/aaaa.jpg" alt="话题封面"></div>
+                                <div class="tpInfo">
+                                    <p class="name">话题名字</p>
+                                    <p class="text-more"><span>1722 个讨论</span><span>476 个关注</span></p>
+                                    <p class="text-more"><span>7 天新增 3 个讨论</span><span>30 天新增 30 个讨论</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="tpOne">
+                                <div class="tpCover"><img src="__IMG__/aaaa.jpg" alt="话题封面"></div>
+                                <div class="tpInfo">
+                                    <p class="name">话题名字</p>
+                                    <p class="text-more"><span>1722 个讨论</span><span>476 个关注</span></p>
+                                    <p class="text-more"><span>7 天新增 3 个讨论</span><span>30 天新增 30 个讨论</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="tpOne">
+                                <div class="tpCover"><img src="__IMG__/aaaa.jpg" alt="话题封面"></div>
+                                <div class="tpInfo">
+                                    <p class="name">话题名字</p>
+                                    <p class="text-more"><span>1722 个讨论</span><span>476 个关注</span></p>
+                                    <p class="text-more"><span>7 天新增 3 个讨论</span><span>30 天新增 30 个讨论</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="dtSelf">
+                    <div class="dtAvatar"><img src="{$self.avatar128}" alt=""></div>
+                    <div class="dtInfo">
+                        <a ucard="{$self.uid}" href="{$self.space_url}">{$self.nickname}</a>
+                        <p><span>72提问</span><span>56回答</span></p>
+                    </div>
+                </div>
+
+                <div class="dtLink">
+                    <p class="qtHead">相关问题</p>
+                    <ul>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                        <li><a href="#">小建议，关于登陆密码框，密码错误后怎么自动清空？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/question.js"></script>
+    <script>
+        $(function () {
+            var aNum = $('.tpList a').length;
+            if(aNum % 2 == 0){
+                $('.tpList a:gt(-3) .tpOne').addClass('lastChild');
+            }else{
+                $('.tpList a:last-child .tpOne').addClass('lastChild');
+            }
+        })
+    </script>
+</block>

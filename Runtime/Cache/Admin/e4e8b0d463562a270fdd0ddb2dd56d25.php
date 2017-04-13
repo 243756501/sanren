@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>ucenter/index/information?uid=<?php echo ($uid); ?>

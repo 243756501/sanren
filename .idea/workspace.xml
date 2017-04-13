@@ -1,12 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php" line="71" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ddd573f9-551d-4750-90f2-5258aef31b0f" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/View/default/Api/anonymous.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/08275a4c8c7c05059003c2dc0273f6a0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/085b574956cdc611cfedaace62cf4e64.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/098ab477a878f805a681e74397d9c876.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/0cd46a9e47bdfc5baf9977e6401bd379.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/0f763671d03bb932629e3a012b7604da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/132423b10ef179c9f74ef3fb8b4462f7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/151da77bd8616a59e3ba3c42c31dca1a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/177e009f4f6d92fc004fc74a2a20a29b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/1cf5d5eac663d4383a3c9ec7913fdc03.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/228b33bcbd822fedc25cdcde7453a6db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/26aaa567eb9acdbcb9e2554cd2626e00.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/27baaf871d269a908c213e527ad8f1d5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/3db0a64ed4118c004b74cb400e5e1cf5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/4142f4915932a335d952ce3abe9a6927.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/4901287661d626d0fe8d3743127fe93a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/546c2c8c053d6fb437e27f1688d30e85.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/5a3ad0cbf09efcc7f31468795ec20410.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/5f20166ffbd2ec8cd59cd98be733456d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/608317db3c152cfef19d828877076549.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/60d8e8b619e55e2f82bb9e778cb7affd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/61b5da2c727eb8de6d2f5789045951a6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/63ba5d24a7b56f8548a2fec770fddf6e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/64ad529837a8bce0e650799820d8ff9c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/75f55ac181c1c2cae7ca4ee4f2a34757.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/76e7e9f1a22999e1fa02e07f44581937.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/788becdf355cd842ee03f25759702d02.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/84722ea2f26a6b7f90b356375781d905.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/88f03a18c8dfc22a93a775bc609c7972.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/90b26dce7e02a13c0c69b8a559fb8802.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/962c82c003f003b827374a5563370c3d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/99292148a728bad6016ad7b6e2317202.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/a488b79fc154c3980c227eee623e7e81.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/aa8377e380120883dd34411be87dc019.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/ad876c819c153daf4711e4040a9b6eed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/b5b24ab970d1de7e03cf176ce8cceebc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/bb7a8e934c375c95b37008bd83307ace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/c43ef92c83d3cf1c15f2d8e2828dc112.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/c586aeff61f970bcf4e01015127fe571.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/ccad2310b810eb2e3a16373128aead9b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/d3b67c9ff199842e30f8630259aacc90.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/e4e8b0d463562a270fdd0ddb2dd56d25.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/ff4a334bd2e97cdb9f676f52da491d5f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/ff977779ad54199452673ffbf425ed99.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Core/42e9d1d224d12eb9910a7b688d773aef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Core/936cc1f6a27d0cfd868e29f30812c896.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Install/40d28a738461d20617b06d40a95a10d3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Ucenter/42e9d1d224d12eb9910a7b688d773aef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Ucenter/4347981379bd6f93bb10f6e222af8596.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Ucenter/5167c255bcf774cb3dc18b282caa62e3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Ucenter/a750aa269f09854c42d73c89e65fb6a4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Cache/Ucenter/fc87010c4e411eb032888c82af3dbc43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Admin/1491976231-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Admin/17_04_11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Admin/17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Core/17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Home/17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Install/17_04_11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/1491964039-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/1491967909-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/1491973550-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/1491979190-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/1491984830-17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Logs/Ucenter/17_04_12.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/0d047376e1bf3d89d2cfb1b89f7f47b0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/1d09bb209ae53103287e20d640501d10.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/22038a31c3613464f8b0a36afd077e69.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/2cd432e447f0f62258f1c1a76fb74af5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/2d4565d85c2ee1bae3451e97c3f7f2e4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/34a7baf0686fae3af6f086555328f862.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/4136b53d169d8fb2cc050bb23475f6ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/4f2cef08fbe49eba5e036e104ecd706b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/5782ab2499ed56ab615609b205c1e5fd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/602d1f53fa324de5fdbb3deb934b8058.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/6b7769ae0b04bb41daca121fad849696.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/7001cd1b3d262675565c4b5062e82ab8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/7187a04ff7e4af208a83eb70a7581a65.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/8a611b99d631fcf1544304b22f1c2a41.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/920e284bad6034f6845b9f25fdd68a0e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/92e126812e57c19f48e8b261eeb70f03.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/9690aec582b5512ceba9b11e70e5b596.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/9916b6f477cf7858a0669ee060cc1663.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/9e19aa4bba25a0262eb25ec6f645e199.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/a0160259c9905828955a52cdf8a22d8e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/a98316ff62c0da85719331dbad3cb14f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/a997f59a14ac05897999aec7558ec53d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/caa0c4565b3cd18d7632be4630bd6b92.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/cc862521486ac8ef49eeac704a5bc943.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/ceac264a56fae1a973829d742bedd7a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/d5c82c098c6e3a422ed48e257e96f152.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/db97509d48189ae76ce45009f7754b0a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/e1b9849c862e4e57bd00b3712e9ae591.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/f53cf95a551dfa422fa7618e952d7ad5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Runtime/Temp/fe3a056cf54121a64ad069176d353adf.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Common/function.php" afterPath="$PROJECT_DIR$/Application/Api/Common/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Api/Conf/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/GroupController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/GroupController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/NewsController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/NewsController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/QuestionController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/QuestionController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Model/NewsModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/NewsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Model/QuestionModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/QuestionModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/13feea337a45782bbddfc79057cc1db9.php" afterPath="$PROJECT_DIR$/Runtime/Temp/13feea337a45782bbddfc79057cc1db9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/427a7e9ddad5d414206209efc0d29f32.php" afterPath="$PROJECT_DIR$/Runtime/Temp/427a7e9ddad5d414206209efc0d29f32.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/5a6c55634e9fb16f138c92e1b60c17e4.php" afterPath="$PROJECT_DIR$/Runtime/Temp/5a6c55634e9fb16f138c92e1b60c17e4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/b1199cec38432e9d60d2b615b74e2588.php" afterPath="$PROJECT_DIR$/Runtime/Temp/b1199cec38432e9d60d2b615b74e2588.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/b4059f474c1fc2693ede07a48df95f2d.php" afterPath="$PROJECT_DIR$/Runtime/Temp/b4059f474c1fc2693ede07a48df95f2d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/ccfe8cdbd0dba192c4447b7ae9bfad7f.php" afterPath="$PROJECT_DIR$/Runtime/Temp/ccfe8cdbd0dba192c4447b7ae9bfad7f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/d5e92f3a9cba4b96386c6f64a35fd58f.php" afterPath="$PROJECT_DIR$/Runtime/Temp/d5e92f3a9cba4b96386c6f64a35fd58f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Temp/dfb69433a4df51b51e7702af4d073210.php" afterPath="$PROJECT_DIR$/Runtime/Temp/dfb69433a4df51b51e7702af4d073210.php" />
     </list>
     <ignored path="shanren.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,18 +140,8 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Api/Common/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeiboController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2223">
-              <caret line="304" column="32" selection-start-line="304" selection-start-column="32" selection-end-line="304" selection-end-column="32" />
+            <state relative-caret-position="185">
+              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -50,93 +150,48 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <marker date="1491976326316" expanded="true" signature="779:887" ph="ALTER TABLE ${$this-&gt;tabName}module" />
-                <marker date="1491976326316" expanded="true" signature="5242:6300" ph="CREATE TABLE... IF" />
-                <marker date="1491976326316" expanded="true" signature="9018:9120" ph="ALTER TABLE ${$this-&gt;tabName}sync_login" />
-                <marker date="1491976326316" expanded="true" signature="9151:9247" ph="ALTER TABLE ${$this-&gt;tabName}cat_entity" />
-                <marker date="1491976326316" expanded="true" signature="9278:9370" ph="ALTER TABLE ${$this-&gt;tabName}store_order" />
-                <marker date="1491976326316" expanded="true" signature="9401:9484" ph="ALTER TABLE ${$this-&gt;tabName}weibo_long" />
-                <marker date="1491976326316" expanded="true" signature="9515:9594" ph="ALTER TABLE ${$this-&gt;tabName}picture" />
-                <marker date="1491976326316" expanded="true" signature="9625:9720" ph="ALTER TABLE ${$this-&gt;tabName}weibo" />
-                <marker date="1491976326316" expanded="true" signature="9751:9854" ph="ALTER TABLE ${$this-&gt;tabName}user_location" />
-                <marker date="1491976326316" expanded="true" signature="9885:9992" ph="ALTER TABLE ${$this-&gt;tabName}store_goods" />
-                <marker date="1491976326316" expanded="true" signature="10023:10661" ph="CREATE TABLE... IF" />
-                <marker date="1491976326316" expanded="true" signature="10693:11549" ph="CREATE TABLE... IF" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminConfigBuilder.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Builder/AdminConfigBuilder.class.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+              <caret line="108" column="99" selection-start-line="108" selection-start-column="99" selection-end-line="108" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/NewsController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Model/NewsModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="WeiboController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Weibo/Controller/WeiboController.class.php">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+            <state relative-caret-position="234">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Addons/Report/Controller/AdminController.class.php">
+      <file leaf-file-name="WeiboModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminListBuilder.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Builder/AdminListBuilder.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="126" column="29" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="29" />
-              <folding>
-                <marker date="1489037403226" expanded="true" signature="22063:22074" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navctrl.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/View/default/Api/navctrl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="194">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -162,8 +217,17 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/MenuController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Builder/AdminListBuilder.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Question/Model/QuestionAnswerModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Question/Model/QuestionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/QuestionController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/GroupController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/NewsModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/NewsController.class.php" />
       </list>
     </option>
   </component>
@@ -175,8 +239,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-179" />
-    <option name="y" value="11" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -205,7 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,6 +316,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shanren" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shanren" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,6 +410,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,6 +470,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ddd573f9-551d-4750-90f2-5258aef31b0f" name="默认" comment="" />
@@ -393,22 +482,23 @@
       <updated>1491887706089</updated>
       <workItem from="1491887708231" duration="7282000" />
       <workItem from="1491897081876" duration="3320000" />
-      <workItem from="1491959988161" duration="15103000" />
+      <workItem from="1491959988161" duration="15559000" />
+      <workItem from="1492043750159" duration="32759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25705000" />
+    <option name="totallyTimeSpent" value="58920000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-179" y="11" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31473213" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -458,22 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Api/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/AccountController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2679">
@@ -519,18 +593,18 @@
         <state relative-caret-position="1045">
           <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
           <folding>
-            <marker date="1491976326316" expanded="true" signature="779:887" ph="ALTER TABLE ${$this-&gt;tabName}module" />
-            <marker date="1491976326316" expanded="true" signature="5242:6300" ph="CREATE TABLE... IF" />
-            <marker date="1491976326316" expanded="true" signature="9018:9120" ph="ALTER TABLE ${$this-&gt;tabName}sync_login" />
-            <marker date="1491976326316" expanded="true" signature="9151:9247" ph="ALTER TABLE ${$this-&gt;tabName}cat_entity" />
-            <marker date="1491976326316" expanded="true" signature="9278:9370" ph="ALTER TABLE ${$this-&gt;tabName}store_order" />
-            <marker date="1491976326316" expanded="true" signature="9401:9484" ph="ALTER TABLE ${$this-&gt;tabName}weibo_long" />
-            <marker date="1491976326316" expanded="true" signature="9515:9594" ph="ALTER TABLE ${$this-&gt;tabName}picture" />
-            <marker date="1491976326316" expanded="true" signature="9625:9720" ph="ALTER TABLE ${$this-&gt;tabName}weibo" />
-            <marker date="1491976326316" expanded="true" signature="9751:9854" ph="ALTER TABLE ${$this-&gt;tabName}user_location" />
-            <marker date="1491976326316" expanded="true" signature="9885:9992" ph="ALTER TABLE ${$this-&gt;tabName}store_goods" />
-            <marker date="1491976326316" expanded="true" signature="10023:10661" ph="CREATE TABLE... IF" />
-            <marker date="1491976326316" expanded="true" signature="10693:11549" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="777:885" ph="ALTER TABLE ${$this-&gt;tabName}module" />
+            <marker date="1492068786833" expanded="true" signature="5514:6572" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="9290:9392" ph="ALTER TABLE ${$this-&gt;tabName}sync_login" />
+            <marker date="1492068786833" expanded="true" signature="9423:9519" ph="ALTER TABLE ${$this-&gt;tabName}cat_entity" />
+            <marker date="1492068786833" expanded="true" signature="9550:9642" ph="ALTER TABLE ${$this-&gt;tabName}store_order" />
+            <marker date="1492068786833" expanded="true" signature="9673:9756" ph="ALTER TABLE ${$this-&gt;tabName}weibo_long" />
+            <marker date="1492068786833" expanded="true" signature="9787:9866" ph="ALTER TABLE ${$this-&gt;tabName}picture" />
+            <marker date="1492068786833" expanded="true" signature="9897:9992" ph="ALTER TABLE ${$this-&gt;tabName}weibo" />
+            <marker date="1492068786833" expanded="true" signature="10023:10126" ph="ALTER TABLE ${$this-&gt;tabName}user_location" />
+            <marker date="1492068786833" expanded="true" signature="10157:10264" ph="ALTER TABLE ${$this-&gt;tabName}store_goods" />
+            <marker date="1492068786833" expanded="true" signature="10295:10933" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="10965:11821" ph="CREATE TABLE... IF" />
           </folding>
         </state>
       </provider>
@@ -594,14 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2679">
           <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="103" column="46" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -685,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10721" column="66" selection-start-line="10721" selection-start-column="66" selection-end-line="10721" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,19 +762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Addons/Report/Controller/ReportController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Weibo/View/default/Topic/topic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,31 +779,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/View/default/Api/navctrl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="912">
           <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Weibo/Controller/WeiboController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Addons/Report/Controller/AdminController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Builder/AdminListBuilder.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="2394">
           <caret line="126" column="29" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="29" />
           <folding>
             <marker date="1489037403226" expanded="true" signature="22063:22074" ph="..." />
@@ -757,61 +797,185 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Builder/AdminConfigBuilder.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="6308">
           <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Addons/Report/Controller/AdminController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="e#44#82#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Weibo/Controller/WeiboController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="162" column="43" selection-start-line="162" selection-start-column="43" selection-end-line="162" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/ApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
-            <marker date="1491976326316" expanded="true" signature="779:887" ph="ALTER TABLE ${$this-&gt;tabName}module" />
-            <marker date="1491976326316" expanded="true" signature="5242:6300" ph="CREATE TABLE... IF" />
-            <marker date="1491976326316" expanded="true" signature="9018:9120" ph="ALTER TABLE ${$this-&gt;tabName}sync_login" />
-            <marker date="1491976326316" expanded="true" signature="9151:9247" ph="ALTER TABLE ${$this-&gt;tabName}cat_entity" />
-            <marker date="1491976326316" expanded="true" signature="9278:9370" ph="ALTER TABLE ${$this-&gt;tabName}store_order" />
-            <marker date="1491976326316" expanded="true" signature="9401:9484" ph="ALTER TABLE ${$this-&gt;tabName}weibo_long" />
-            <marker date="1491976326316" expanded="true" signature="9515:9594" ph="ALTER TABLE ${$this-&gt;tabName}picture" />
-            <marker date="1491976326316" expanded="true" signature="9625:9720" ph="ALTER TABLE ${$this-&gt;tabName}weibo" />
-            <marker date="1491976326316" expanded="true" signature="9751:9854" ph="ALTER TABLE ${$this-&gt;tabName}user_location" />
-            <marker date="1491976326316" expanded="true" signature="9885:9992" ph="ALTER TABLE ${$this-&gt;tabName}store_goods" />
-            <marker date="1491976326316" expanded="true" signature="10023:10661" ph="CREATE TABLE... IF" />
-            <marker date="1491976326316" expanded="true" signature="10693:11549" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="777:885" ph="ALTER TABLE ${$this-&gt;tabName}module" />
+            <marker date="1492068786833" expanded="true" signature="5514:6572" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="9290:9392" ph="ALTER TABLE ${$this-&gt;tabName}sync_login" />
+            <marker date="1492068786833" expanded="true" signature="9423:9519" ph="ALTER TABLE ${$this-&gt;tabName}cat_entity" />
+            <marker date="1492068786833" expanded="true" signature="9550:9642" ph="ALTER TABLE ${$this-&gt;tabName}store_order" />
+            <marker date="1492068786833" expanded="true" signature="9673:9756" ph="ALTER TABLE ${$this-&gt;tabName}weibo_long" />
+            <marker date="1492068786833" expanded="true" signature="9787:9866" ph="ALTER TABLE ${$this-&gt;tabName}picture" />
+            <marker date="1492068786833" expanded="true" signature="9897:9992" ph="ALTER TABLE ${$this-&gt;tabName}weibo" />
+            <marker date="1492068786833" expanded="true" signature="10023:10126" ph="ALTER TABLE ${$this-&gt;tabName}user_location" />
+            <marker date="1492068786833" expanded="true" signature="10157:10264" ph="ALTER TABLE ${$this-&gt;tabName}store_goods" />
+            <marker date="1492068786833" expanded="true" signature="10295:10933" ph="CREATE TABLE... IF" />
+            <marker date="1492068786833" expanded="true" signature="10965:11821" ph="CREATE TABLE... IF" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php">
+    <entry file="file://$PROJECT_DIR$/Addons/Report/Controller/ReportController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="190">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#44#81#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/SensitiveModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
+    <entry file="file://$PROJECT_DIR$/Application/Question/Model/QuestionCategoryModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="49" />
+        <state relative-caret-position="194">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-832">
+          <caret line="419" column="20" selection-start-line="419" selection-start-column="20" selection-end-line="419" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Question/Model/QuestionAnswerModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="60" column="63" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/QuestionModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="102" column="65" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Question/Model/QuestionModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/QuestionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="254" column="5" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeiboModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="185">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller/WeiboController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2223">
-          <caret line="304" column="32" selection-start-line="304" selection-start-column="32" selection-end-line="304" selection-end-column="32" />
+        <state relative-caret-position="234">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/GroupController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="441" column="43" selection-start-line="441" selection-start-column="43" selection-end-line="441" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="108" column="99" selection-start-line="108" selection-start-column="99" selection-end-line="108" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/NewsModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/NewsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding />
         </state>
       </provider>

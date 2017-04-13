@@ -15,6 +15,33 @@ class NewsModel extends Model
 {
 
 
+    public function editData2($data=array(),$time)
+    {
+        if (!mb_strlen($data['description'], 'utf-8')) {
+            $data['description'] = msubstr(op_t($data['content']), 0, 200);
+        }
+        $detail['content'] = $data['content'];
+        $detail['template'] = $data['template'];
+        $data['reason'] = '';
+        if ($data['id']) {
+            $data['update_time'] = time();
+            $res = D('News/News')->save($data);
+            $detail['news_id'] = $data['id'];
+            if ($res) {
+                D('News/NewsDetail')->save($detail);
+            }
+        } else {
+            $data['create_time'] = $data['update_time'] = $time;
+            $res = D('News/News')->add($data);
+            action_log('add_news', 'News', $res, $data['uid']);
+            $detail['news_id'] = $res;
+            if ($res) {
+                D('News/NewsDetail')->add($detail);
+            }
+        }
+
+        return $res;
+    }
    public  function editData($data = array())
     {
 

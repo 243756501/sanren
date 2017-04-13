@@ -1,0 +1,47 @@
+.tpWrap{
+  background-color: @f;
+  .qtHead{
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .tpList{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      display: inline-block;
+      width: 50%;
+    }
+    .tpOne{
+      border-bottom: 1px solid #eee;
+      display: flex;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      .tpCover{
+        .comAvatar(60px);
+        border-radius: 5px;
+      }
+      .tpInfo{
+        .name{
+          background-color: #99cfff;
+          color: @f;
+          padding: 1px 10px;
+          border-radius: 5px;
+          display: inline-block;
+        }
+        p{
+          color: #999;
+          font-size: 13px;
+          margin-bottom: 5px;
+          max-width: 225px;
+        }
+      }
+    }
+    .lastChild{
+      border-bottom-color:transparent!important;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+  }
+}

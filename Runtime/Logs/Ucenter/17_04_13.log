@@ -1,0 +1,1911 @@
+[ 2017-04-13T19:37:36+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083456 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:37:38+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083458 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.003001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:37:42+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.031002s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083462 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:37:49+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083469 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:37:53+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083473 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:37:59+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083479 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:02+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.002000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083482 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:09+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083489 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:12+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083492 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:19+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083499 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:22+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.002000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083502 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:29+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.002000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083509 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:32+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083512 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:39+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083519 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:42+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.016001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083522 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:49+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.003001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083529 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:52+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083532 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.019002s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:38:59+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083539 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:02+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083542 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:09+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083549 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:12+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083552 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:19+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.022002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083559 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:22+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.013000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083562 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:29+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.015001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083569 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:32+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.008000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.003000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083572 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:39+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.004000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083579 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:42+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083582 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:49+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083589 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:52+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083592 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:39:59+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083599 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:03+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.002001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083603 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:09+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.008000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083609 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:13+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083613 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:19+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083619 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:24+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.025002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.014000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083624 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.025001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:29+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083629 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:33+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083633 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:39+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083639 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:43+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.024002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083643 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:49+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083649 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:53+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083653 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:40:59+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083659 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:03+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083663 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.002001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:09+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083669 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:13+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083673 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:19+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083679 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:23+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083683 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:29+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.012001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.009000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083689 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+
+[ 2017-04-13T19:41:33+08:00 ] ::1 /shanren/index.php?s=/ucenter/public/getinformation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.031002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ocenter_message` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_message` WHERE ( to_uid=1 and  is_read=0  and last_toast=0 ) ORDER BY id desc LIMIT 99999   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\MessageModel.class.php 第 743 行.
+SQL: UPDATE `ocenter_message` SET `last_toast`=1492083693 WHERE ( to_uid=1 and  is_read=0 and last_toast=0 ) [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_message` WHERE `to_uid` = 1 AND `is_read` = 0 AND (`type` NOT LIKE '%Common_email%' AND `type` NOT LIKE '%Common_mobile%') LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_push` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `ocenter_talk_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkPushModel.class.php 第 21 行.
+SQL: UPDATE `ocenter_talk_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_talk_message_push` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_talk_message_push` WHERE `uid` = 1 AND `status` = 0  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\TalkMessagePushModel.class.php 第 22 行.
+SQL: UPDATE `ocenter_talk_message_push` SET `status`=1 WHERE `uid` = 1 AND `status` = 0 [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Ucenter\Controller\PublicController.class.php 第 147 行.
+

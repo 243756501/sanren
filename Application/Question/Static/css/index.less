@@ -1,0 +1,331 @@
+@import "../../../../Public/css/var";
+@import "question";
+@import "detail";
+@import "topic";
+#main-container{
+  margin-top: 0;
+  font-size: 14px;
+}
+@f:#fff;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comBox{
+  background-color: @f;
+  margin-top: 20px;
+}
+.flexWrap{
+  display: flex;
+  justify-content: space-between;
+}
+.flexCent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.state{
+  border: 1px solid @primary-color;
+  border-radius: 5px;
+  padding: 1px 10px;
+  color: @primary-color;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.comAvatar(@width){
+  width: @width;
+  height: @width;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.qtWrap{
+ .flexWrap;
+  .qtLeft{
+    width: 820px;
+    .qtTop{
+      .comBox;
+      margin: 0;
+      .tags{
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #f2f2f2;
+        a{
+          padding-left: 20px;
+          color: #666;
+          &:hover{
+            color: @primary-color;
+          }
+          &:first-child{
+            color: #333;
+          }
+        }
+      }
+      .qtSearch{
+        padding: 10px 20px;
+        .flexWrap;
+      }
+      .qtHot{
+        display: flex;
+        padding: 0 20px 10px 10px;
+        li{
+          padding: 0 10px;
+          a:hover{
+            color: @primary-color;
+          }
+        }
+      }
+    }
+    .qtList{
+      .comBox;
+      .qtTab{
+        background-color: #F6F7FB;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        li{
+          line-height: 40px;
+          padding: 0 20px;
+          a{
+            color: #333;
+            font-size: 15px;
+          }
+        }
+        .active{
+          background-color: @f;
+        }
+      }
+      .qtContent{
+        padding: 10px 20px;
+      }
+    }
+  }
+  .qtRight{
+    width: 300px;
+    .qtCard{
+      background-color: @f;
+      .cdTop{
+        padding: 20px;
+        text-align: center;
+        .slogan{
+          border-bottom: 1px solid #eee;
+          padding-bottom: 10px;
+        }
+        .avatar{
+          .comAvatar(100px);
+          border: 1px solid #f2f2f2;
+          box-shadow: 0 0 10px rgba(0,0,0,.1);
+          margin: 20px auto 10px;
+        }
+        .name{
+          font-size: 16px;
+          margin-bottom: 10px;
+          color: #333;
+          display: block;
+          &:hover{
+            color: @primary-color;
+          }
+        }
+        .number{
+          color: #666;
+          margin-bottom: 0;
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+      .cdBottom{
+        background-color: @primary-color;
+        padding: 10px;
+        .flexWrap;
+        .btBox{
+          flex: 1;
+          text-align: center;
+          color: @f;
+          p{
+            margin: 0;
+            &:first-child{
+              font-weight: bold;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .hots{
+      .comBox;
+      .qtSome{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        a{
+          display: inline-block;
+          border: 1px solid #eee;
+          color: #999;
+          padding: 3px 10px;
+          border-radius: 5px;
+          font-size: 12px;
+          margin: 10px 10px 0;
+          &:hover{
+            border-color: @primary-color;
+            color: @primary-color;
+          }
+        }
+      }
+    }
+    .ardor{
+      .comBox;
+      .qtList{
+        padding: 0 10px 10px;
+        li{
+          margin: 10px 0;
+          display: flex;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          .avatar{
+            .comAvatar(50px);
+            margin-right: 15px;
+          }
+          .info{
+            a{
+              font-weight: 600;
+              color: #333;
+            }
+            p{
+              margin-bottom: 0;
+              margin-top: 5px;
+              color: #999;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.iptWrap{
+  width: 660px;
+  .flexWrap;
+  input{
+    width: 590px;
+    height: 40px;
+    border:1px solid @primary-color;
+    padding: 0 10px;
+    outline: none;
+  }
+  .btSearch{
+    border:none;
+    width: 70px;
+    height: 40px;
+    background-color: @primary-color;
+    color: @f;
+    .flexCent;
+    border-radius: 0 3px 3px 0;
+  }
+}
+.qtAsk{
+  width: 100px;
+  height: 40px;
+  .flexCent;
+  border: 1px solid @primary-color;
+  color: @primary-color;
+}
+//问题列表样式
+.qtHead{
+  height: 40px;
+  .flexWrap;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+.qtOne{
+  .flexWrap;
+  border-bottom: 1px dashed #eee;
+  margin: 10px 0;
+  &:last-child{
+    border: none;
+    margin-bottom: 0;
+  }
+  .left{
+    display: flex;
+    .avatar{
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      margin-right: 15px;
+      overflow: hidden;
+    }
+    .info{
+      .qtTitle{
+        color: #666;
+      }
+      .btInfo{
+        span{
+          color: #999;
+          margin-left: 15px;
+        }
+        .name{
+          margin: 0;
+          color: #666;
+        }
+      }
+    }
+  }
+  .right{
+    text-align: right;
+    .offer{
+      color: red;
+    }
+    p{
+      color: #999;
+      i{
+        margin-right: 8px;
+      }
+    }
+  }
+}
+//搜索弹出框
+.qtDialog{
+  padding: 20px;
+  overflow: hidden;
+  .iptWrap{
+    width: 557px;
+    input{
+      width: 507px;
+    }
+  }
+  .often{
+    margin: 10px 0;
+    li{
+      margin: 5px 0;
+      a{
+        color: #333;
+      }
+    }
+  }
+  .haveNo{
+    display: flex;
+    margin: 10px 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    span{
+      color: #999;
+      margin-right: 10px;
+    }
+  }
+}
+.qtFilter{
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.doSearch{
+  max-height: 60px!important;
+  overflow: hidden;
+  display: block!important;
+}

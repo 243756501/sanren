@@ -191,6 +191,69 @@ class QuestionController extends BaseController
         $this->ajaxSuccess($resAnswer);
     }
 
+
+
+
+
+    public function  insertQuestionComm($questionId,$commdata,$time)
+    {
+        $mid = getrandomId();
+        $aQuestionId = $questionId;
+        $atime=$time;
+        $commdata=json_decode($commdata,true)['data'];
+        for($i=0;$i<count($commdata);$i++) {
+            $atime=getrandomTime($atime);
+            $aAnswerId = $commdata[$i]["answer_id"];
+            if(!$aAnswerId)
+            {
+                $aAnswerId=0;
+            }
+            $aContent=$commdata[$i]["content"];
+            $this->ajaxError(array('question_id'=>$aQuestionId));
+            $ANSWER_MIN_NUM = modC('QUESTION_ANSWER_MIN_NUM', 3, 'Question');
+            if (mb_strlen($aContent, 'utf-8') < $ANSWER_MIN_NUM) {
+                $this->apiError('回答内容不能少于' . $ANSWER_MIN_NUM . '个字！');
+            }
+            $data['question_id'] = $aQuestionId;
+            $data['content'] = $aContent;
+
+            $resAnswer = $this->model->editAnswerData($data,$mid);
+            if ($resAnswer) {
+                //处理@
+                D('Common/ContentHandler')->handleAtWho($data['content'], 'Question/Index/detail#', array('id' => $data['question_id']));
+                //发送消息
+                $question = M('Question')->find($aQuestionId);
+                D('Common/Message')->sendMessage($question['uid'], $resAnswer['user']['nickname'] . '回答了你的问题【' . $question['title'] . '】或编辑了 Ta 的答案，快去看看吧！', '问题被回答', 'Question/Index/detail', array('id' => $aQuestionId), $mid, 1);
+                //Todo
+                ////推送功能
+            }
+        }
+    }
+
+    public function insertQuestion()
+    {
+        $mid=getrandomId();
+        $acomm=I_POST('comment','text');
+        $time=getrandomTime();
+        $need_audit = modC('QUESTION_NEED_AUDIT', 1, 'Question');
+        $aId = POST_I('id', 'intval');
+        $data['title'] = POST_I('title', 'text');
+        $this->ajaxError(array('title'=>$data['title']));
+        $data['category'] = POST_I('category', 'intval',0);
+        $data['description'] = POST_I('description', 'filter_content');
+        $data['leixing'] = POST_I('score_type','intval',1);
+        $data['score_num'] = POST_I('score_num','intval',0);
+        if( $data['score_num'] < 0){
+            $this->apiError('悬赏必须大于0');
+        }
+        $data['status'] = $need_audit? 2: 1;
+        $question = $this->model->editQuestion2($data,$mid,$time);
+        if($question) {
+            $this->insertQuestionComm($question, $acomm, $time);
+            $this->apiSuccess('发布成功,等待审核');
+        }
+    }
+
     /**发布或者编辑问题
      * @author 胡佳雨 <hjy@ourstu.com>.
      */

@@ -1,0 +1,161 @@
+<extend name="Base/common"/>
+<block name="header">
+    <link type="text/css" rel="stylesheet" href="__CSS__/index.css"/>
+    <style>
+        #main-container {
+            margin-top: 70px;
+        }
+    </style>
+</block>
+<block name="body">
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content qtDialog">
+                <div class="iptWrap">
+                    <input type="text" data-role="question" placeholder="提问前请先搜索...">
+                    <a href="javascript:" data-role="ajax-search" class="btSearch">搜索</a>
+                </div>
+                <ol class="often">
+                    <volist name="preset" id="data">
+                        <li><a href="{:U('Question/Index/search',array('keywords'=>$data))}">{$data}</a></li>
+                    </volist>
+                </ol>
+                <div class="haveNo">
+                    <span>没有符合？</span>
+                    <a href="{:U('Question/Index/edit')}" class="qtAsk">提问</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qtWrap">
+        <div class="qtLeft">
+            <div class="qtTop">
+                <div class="tags">
+                    <a href="{:U('Question/Index/questions')}" <if condition="!$question_cate">class="active"</if>>
+                    {:L("_ALL_WITH_SPACE_")}
+                    </a>
+                    <volist name="parent" id="type">
+                        <a href="{:U('Question/Index/questions',array('category'=>$type['id']))}" data-id="{$type['id']}" class="ptype <if condition="$question_cate eq $type['id']">active</if>">
+                        {$type.title}
+                        </a>
+                    </volist>
+                </div>
+                <div class="qtSearch">
+                    <form action="{:U('Question/index/search')}" method="post">
+                        <div class="iptWrap">
+                            <input type="text" name="keywords" placeholder="搜搜看...">
+                            <button type="submit" href="javascript:" class="btSearch">搜索</button>
+                        </div>
+                    </form>
+                    <a href="" class="qtAsk" data-toggle="modal" data-target="#myModal">我要提问</a>
+                </div>
+                <ul class="qtHot">
+                    <volist name="category" id="data">
+                        <li><a href="{:U('questions',array('category'=>$data['id']))}">{$data.title}</a></li>
+                    </volist>
+                </ul>
+            </div>
+
+            <div class="qtList">
+                <ul class="qtTab">
+                    <li class="" data-type="new"><a href="{:U('index',array('type'=>'new'))}" >最新问题</a></li>
+                    <li class="" data-type="high"><a href="{:U('index',array('type'=>'high'))}">高悬赏</a></li>
+                    <li class="" data-type="hot"><a href="{:U('index',array('type'=>'hot'))}">热门提问</a></li>
+                    <li class="" data-type="urgent"><a href="{:U('index',array('type'=>'urgent'))}">迫切待答</a></li>
+                </ul>
+                <div class="tab-content qtContent">
+                    <ul class="tab-pane fade active in">
+                        <include file="_list"/>
+                    </ul>
+                    <div class="text-right">
+                        {:getPagination($totalCount,15)}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qtRight">
+            <!--个人卡片-->
+            <div class="qtCard" style="display: none">
+                <div class="cdTop">
+                    <p class="slogan">帮助别人是多么的快乐</p>
+                    <div class="avatar"><img src="{$self.avatar128}"/></div>
+                    <a class="name">{$self.nickname}</a>
+                    <p class="number">已帮助了<span>{$my_help}</span>人</p>
+                </div>
+                <div class="cdBottom">
+                    <div class="btBox asked">
+                        <a href="{:U('index',array('type'=>'my','types'=>q))}"><p style="color: #ffffff;">{$my_ask}</p></a>
+                        <p>我的提问</p>
+                    </div>
+                    <div class="btBox answered">
+                        <a href="{:U('index',array('type'=>'my','types'=>a))}"><p style="color: #ffffff;">{$my_help}</p></a>
+                        <p>我的回答</p>
+                    </div>
+                </div>
+            </div>
+            <!--热门话题-->
+            <!--<div class="hots" style="margin-top: 0">-->
+                <!--<p class="qtHead"><span>热门话题</span><a href="">全部</a></p>-->
+                <!--<div class="qtSome">-->
+                    <!--<a href="#">OpenSNS</a>-->
+                    <!--<a href="#">手机网页版</a>-->
+                    <!--<a href="#">免费</a>-->
+                    <!--<a href="#">授权方案</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--热心用户-->
+            <div class="ardor">
+                <p class="qtHead">问答达人</p>
+                <ul class="qtList">
+                    <volist name="question_rank" id="list">
+                        <li>
+                            <div class="avatar"><img src="{$list.user.avatar128}"/></div>
+                            <div class="info">
+                                <a href="{$list.user.space_url}">{$list.user.nickname}</a>
+                                <p>{$list.answer_count}次回答，{$list.support_count}次赞同</p>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $(function () {
+
+            var current = "{$current}";
+            $('[data-type='+current+']').addClass('active');
+
+            if(is_login()){
+                $('.qtCard').css('display','block');
+                $('.hots').css('marginTop','20px');
+            }else {
+                $('.qtCard').css('display','none');
+                $('.hots').css('marginTop','0');
+            }
+
+            $('[data-role="ajax-search"]').click(function(){
+                var url = "{:U('Question/Index/search')}";
+                var keywords = $('[data-role="question"]').val();
+                var $container = $('.often');
+                $container.html('');
+                var li = '';
+                $.post(url,{is_ajax:1,keywords:keywords},function(res){
+                    if (res.status == 1) {
+                        if (res.info == null) {
+                            $container.append('<span>暂无搜索结果</span>');
+                        }
+                        for (var i in res.info) {
+                            var t = res.info[i];
+                            var href = U("question/index/detail",['id', t.id ]);
+                            li += '<li><a href="'+ href +'">'+ t.title+'</a></li>';
+                            $container.append(li);
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+</block>

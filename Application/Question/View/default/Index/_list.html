@@ -1,0 +1,21 @@
+<empty name="list">
+    <div id="empty" class="text-muted text-center" ><i class="icon-inbox"></i> 暂无更多</div>
+</empty>
+
+<volist name="list" id="data">
+    <li class="qtOne">
+        <div class="left">
+            <div class="avatar"><img src="{$data.user.avatar128}"/></div>
+            <div class="info">
+                <p><span>问：</span><span class="qtTitle"><a target="_blank" href="{:U('Question/Index/detail',array('id'=>$data['id']))}">{$data.title}</a></span><span class="state">
+                    <neq name="data.best_answer" value="0">已结题<else/>待回答</neq>
+                </span></p>
+                <p class="btInfo"><span class="name">{$data.user.nickname}</span><span>发起提问</span><span>共有{$data.answer_num}人回答</span></p>
+            </div>
+        </div>
+        <div class="right">
+            <p class="offer">悬赏：{$data.score_num}</p>
+            <p><i class="icon-time"></i><span>{$data.create_time|friendlyDate}</span></p>
+        </div>
+    </li>
+</volist>

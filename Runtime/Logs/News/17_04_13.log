@@ -1,0 +1,540 @@
+[ 2017-04-13T19:37:38+08:00 ] ::1 /shanren/index.php?s=/news/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.009001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.012000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keywords E:\phpStudy\WWW\shanren\Application\News\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `ocenter_news` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `ocenter_news_detail` [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `ocenter_news_category` [ RunTime:0.013001s ]
+SQL: SELECT `id`,`title`,`pid`,`can_post`,`need_audit`,`sort`,`status` FROM `ocenter_news_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Application\News\Controller\IndexController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_news_category` WHERE `can_post` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keywords E:\phpStudy\WWW\shanren\Application\News\Controller\IndexController.class.php 第 69 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_NEWS_ORDER_FIELD' LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_NEWS_ORDER_TYPE' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_NEWS_PAGE_NUM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_news` WHERE `dead_line` > 1492083457 AND `post_time` < 1492083457 AND `status` = 1 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ocenter_news` WHERE `dead_line` > 1492083457 AND `post_time` < 1492083457 AND `status` = 1 ORDER BY sort desc,create_time desc LIMIT 0,20   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: seo E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 9 行.
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.011000s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 78 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 79 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 80 行.
+SQL: SELECT * FROM `ocenter_seo_rule` WHERE ( (app='' or app='News') and (controller='' or controller='Index') and (action='' or action='index') and status=1 ) ORDER BY sort asc  [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.014001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.013001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.015001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.010000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.254014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.149009s ]
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 15 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 31 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 32 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 33 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 15 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 31 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 32 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 33 行.
+NOTIC: [8] Undefined index: type E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 38 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 50 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 66 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 67 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 68 行.
+NOTIC: [8] Undefined index: type E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 38 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 50 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 66 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 67 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 68 行.
+NOTIC: [8] Undefined index: tab E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 37 行.
+NOTIC: [8] Undefined variable: search_keywords E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.272015s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv_pos` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'index_top' AND `path` = 'News/Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 5 AND `status` = 1 AND `start_time` < 1492083458 AND `end_time` > 1492083458 ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.196011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044002s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'index_right_top' AND `path` = 'News/Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 7 AND `status` = 1 AND `start_time` < 1492083458 AND `end_time` > 1492083458 ORDER BY sort asc  [ RunTime:0.008000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.217012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.067004s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.339019s ]
+NOTIC: [2] Missing argument 2 for News\Widget\PositionWidget::lists() E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 14 行.
+NOTIC: [2] Missing argument 4 for News\Widget\PositionWidget::lists() E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 14 行.
+NOTIC: [8] Undefined variable: category E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 23 行.
+NOTIC: [8] Undefined variable: filed E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 23 行.
+SQL: SELECT * FROM `ocenter_news` WHERE `status` = 1 AND `dead_line` > 1492083458 AND ( position & 2 = 2 ) ORDER BY sort desc,view desc LIMIT 5   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.233013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.076004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.081005s ]
+NOTIC: [8] Undefined variable: now_category E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 481 行.
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.355020s ]
+SQL: SELECT * FROM `ocenter_news` WHERE `status` = 1 AND `dead_line` > 1492083458 AND `post_time` < 1492083458 AND `update_time` > 1491478658 ORDER BY view desc LIMIT 5   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\News\Widget\HotWidget.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.250014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.100006s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'index_bottom_top' AND `path` = 'News/Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 6 AND `status` = 1 AND `start_time` < 1492083458 AND `end_time` > 1492083458 ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.264015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.108006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.110006s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.382021s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.004001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.292017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.136008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.141008s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\News\252de710a813c65aa32677b1ada1383f.php 第 547 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.413023s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.420024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.309018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.154009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.162009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.154009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.162009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-13T19:37:42+08:00 ] ::1 /shanren/index.php?s=/news/index/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.014001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keywords E:\phpStudy\WWW\shanren\Application\News\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `ocenter_news` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ocenter_news_detail` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `ocenter_news_category` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`title`,`pid`,`can_post`,`need_audit`,`sort`,`status` FROM `ocenter_news_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Application\News\Controller\IndexController.class.php 第 37 行.
+SQL: SELECT * FROM `ocenter_news` WHERE `id` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_news_detail` WHERE `news_id` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_news` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`can_post`,`need_audit`,`sort`,`status` FROM `ocenter_news_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `ocenter_news_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_news` SET `view`=view+1 WHERE `id` = 1 [ RunTime:0.001000s ]
+SQL: SELECT `view` FROM `ocenter_news` WHERE `id` = 1 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.010001s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 78 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 79 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 80 行.
+SQL: SELECT * FROM `ocenter_seo_rule` WHERE ( (app='' or app='News') and (controller='' or controller='Index') and (action='' or action='detail') and status=1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.011001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.010000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.015001s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.192011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.129008s ]
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 15 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 31 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 32 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 33 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 15 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 31 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 32 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 33 行.
+NOTIC: [8] Undefined index: type E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 38 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 50 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 66 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 67 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 68 行.
+NOTIC: [8] Undefined index: type E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 38 行.
+NOTIC: [8] Undefined index: children E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 50 行.
+NOTIC: [8] Undefined index: li_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 66 行.
+NOTIC: [8] Undefined index: a_class E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 67 行.
+NOTIC: [8] Undefined index: icon E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 68 行.
+NOTIC: [8] Undefined index: tab E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 37 行.
+NOTIC: [8] Undefined variable: search_keywords E:\phpStudy\WWW\shanren\Runtime\Cache\News\7ac86ee1d16e058d630e77679d9f3d59.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/2336d7d2e20c6705a885d8fdb019e187.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/d8cc2063ccec78bd3ce1c8aa193bc2ca.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.209012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.140008s ]
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010000s ]
+NOTIC: [8] Undefined index: class E:\phpStudy\WWW\shanren\Runtime\Cache\News\b4f3c6bc7c9a05643d8a77d69bc52307.php 第 4 行.
+NOTIC: [8] Undefined index: style E:\phpStudy\WWW\shanren\Runtime\Cache\News\b4f3c6bc7c9a05643d8a77d69bc52307.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.232014s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\ShareWidget::detailShare() E:\phpStudy\WWW\shanren\Application\Common\Widget\ShareWidget.class.php 第 17 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Widget\ShareWidget.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.163010s ]
+NOTIC: [8] Undefined variable: share_text E:\phpStudy\WWW\shanren\Runtime\Cache\News\2d7f7bfca9f1f962039875a855aa5ae5.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032002s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.250015s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv_pos` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'below_article_content' AND `path` = 'News/Index/detail' AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 8 AND `status` = 1 AND `start_time` < 1492083462 AND `end_time` > 1492083462 ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.212012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.083005s ]
+INFO: [ localComment ] --START--
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_INDEX_LOCAL_COMMENT_COUNT' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_local_comment` [ RunTime:0.012001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_INDEX_LOCAL_COMMENT_ORDER' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `ocenter_local_comment` WHERE `app` = 'News' AND `mod` = 'index' AND `row_id` = 1 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\LocalComment\LocalCommentAddon.class.php 第 131 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_local_comment` WHERE `app` = 'News' AND `mod` = 'index' AND `row_id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\LocalComment\LocalCommentAddon.class.php 第 74 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_NEWS_INDEX_LOCAL_COMMENT_CAN_GUEST' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: extra E:\phpStudy\WWW\shanren\Addons\LocalComment\LocalCommentAddon.class.php 第 92 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpStudy\WWW\shanren\Addons\LocalComment\LocalCommentAddon.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.267016s ]
+NOTIC: [2] Missing argument 2 for tox_addons_url(), called in E:\phpStudy\WWW\shanren\Runtime\Cache\News\3ad1e0502fb4e5457a8ca887ddface95.php on line 114 and defined E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.130007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.137008s ]
+INFO: Run Addons\LocalComment\LocalCommentAddon [ RunTime:0.054003s ]
+INFO: [ localComment ] --END-- [ RunTime:0.054003s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.346020s ]
+NOTIC: [2] Missing argument 4 for News\Widget\PositionWidget::lists() E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 14 行.
+NOTIC: [8] Undefined variable: filed E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 23 行.
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status`,`can_post`,`need_audit` FROM `ocenter_news_category` WHERE `pid` = 1 AND `status` = 1 ORDER BY sort desc  [ RunTime:0.001000s ]
+NOTIC: [2] array_column() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Application\News\Model\NewsModel.class.php 第 116 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\News\Model\NewsModel.class.php 第 117 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Db.class.php 第 497 行.
+SQL: SELECT * FROM `ocenter_news` WHERE `status` = 1 AND `category` IN () AND `dead_line` > 1492083462 AND ( position & 4 = 4 ) ORDER BY sort desc,view desc LIMIT 5   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND `dead_line` > 1492083462 AND ( position & 4 = 4 ) ORDER BY sort desc,view ' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_news` WHERE `status` = 1 AND `category` IN () AND `dead_line` > 1492083462 AND ( position & 4 = 4 ) ORDER BY sort desc,view desc LIMIT 5  
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\News\Widget\PositionWidget.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.282016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.146008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.152009s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.362021s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status`,`can_post`,`need_audit` FROM `ocenter_news_category` WHERE `pid` = 1 AND `status` = 1 ORDER BY sort desc  [ RunTime:0.001000s ]
+NOTIC: [2] array_column() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Application\News\Widget\HotWidget.class.php 第 21 行.
+NOTIC: [2] array_merge(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\News\Widget\HotWidget.class.php 第 22 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Db.class.php 第 497 行.
+SQL: SELECT * FROM `ocenter_news` WHERE `category` IN () AND `status` = 1 AND `dead_line` > 1492083462 AND `post_time` < 1492083462 AND `update_time` > 1491478662 ORDER BY view desc LIMIT 5   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND `status` = 1 AND `dead_line` > 1492083462 AND `post_time` < 1492083462 AND' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_news` WHERE `category` IN () AND `status` = 1 AND `dead_line` > 1492083462 AND `post_time` < 1492083462 AND `update_time` > 1491478662 ORDER BY view desc LIMIT 5  
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\News\Widget\HotWidget.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.297017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.161009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.166009s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'news_right_below_all' AND `path` = 'News/Index/detail' AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/511bbde6486ce4ffd562401cd717c7ed.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/66242075237e85dc00f7bfa57557093b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: INSERT INTO `ocenter_adv_pos` (`name`,`type`,`width`,`height`,`title`,`status`,`theme`,`margin`,`padding`,`data`,`path`) VALUES ('news_right_below_all',1,'360px','100px','资讯右侧下方广告',1,'all','','','[]','News/Index/detail') [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 10000 AND `status` = 1 AND `start_time` < 1492083462 AND `end_time` > 1492083462 ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.308018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.174010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.177010s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.390023s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.332019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.197011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.201011s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\News\9c421bd032e4a9f7ef941837a547e421.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001001s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.410024s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.415024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.346020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.212012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.216012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.212012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.216012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

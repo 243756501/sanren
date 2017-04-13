@@ -5,10 +5,10 @@
 function getrandomId(){
     $array=D('anonymous')->where('id>0')->select();
     $len=count($array);
-    $ran=rand(1,$len);
+    $ran=rand(0,$len-1);
     if($array[$ran]['uid'])
     {
-        return $array[$ran]['uid'];
+        return intval($array[$ran]['uid']);
     }
     else
     {
@@ -16,7 +16,27 @@ function getrandomId(){
     }
 }
 
-
+/*
+ * 返回0~1的随机数
+ */
+function randFloat($min=0, $max=1){
+    return $min + mt_rand()/mt_getrandmax() * ($max-$min);
+}
+/*
+ * 随机获取2017年1月1日-至今的时间
+ */
+function getrandomTime($sdate){
+    if($sdate)
+    {
+        $sdate=strtotime(date($sdate));
+    }
+    $sdate=strtotime('2017-01-01 00:00:00');
+    $ndate=strtotime(date('Y-m-d H:i:s'));
+    $dvalue=$ndate-$sdate-3600; //设置一个小时的差值
+    $ran=randFloat();
+    $return=$sdate+intval($dvalue*$ran);
+    return $return;
+}
 
 /**统一的推送接口
  * @param $uidList

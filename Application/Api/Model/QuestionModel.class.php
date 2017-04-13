@@ -90,6 +90,20 @@ class QuestionModel extends Model
         return $answer;
     }
 
+    public function editAnswerData2($data,$mid=0,$time=0)
+    {
+        $res = D('Question/QuestionAnswer')->editData2($data,$time);
+        $answer = $this->getAnswer($data['id']?$data['id']:$res,false,$mid);
+        return $answer;
+    }
+
+    public function  editQuestion2($data,$mid=0,$time=0)
+    {
+        $res = D('Question/Question')->editData2($data,$time);
+        $question = $this->getQuestion($data['id']? $data['id']: $res,false,$mid);
+        return $res;
+    }
+
     /**发布/编辑问题
      * @param $data
      * @param $mid

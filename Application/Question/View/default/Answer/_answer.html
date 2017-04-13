@@ -1,0 +1,58 @@
+<div class="one_answer clearfix">
+    <div class="" style="display: flex;width: 550px">
+        <div class="support_block">
+            <if condition="$answer['is_support']||$answer['is_oppose']">
+                <a title={:L("_SUPPORT_WITH_DOUBLE_")} <eq name="answer['is_support']" value="1">class="butt already_do"<else/>class="butt"</eq>>
+                <i class="icon icon-thumbs-up"></i>
+                <br/>
+                <span class="num">{$answer.support}</span>
+                </a>
+                <a title={:L("_OBJECT_NOT_SHOWING_YOUR_NAME_WITH_DOUBLE_")} <eq name="answer['is_oppose']" value="1">class="butt already_do"<else/>class="butt"</eq>>
+                <span class="num">{$answer.oppose}</span>
+                <br/>
+                <i class="icon icon-thumbs-down"></i>
+                </a>
+                <else/>
+                <a title={:L("_SUPPORT_WITH_DOUBLE_")} class="butt can_do" data-role="answer-support" data-id="{$answer.id}">
+                    <i class="icon icon-thumbs-up"></i>
+                    <br/>
+                    <span class="num">{$answer.support}</span>
+                </a>
+                <a title={:L("_OBJECT_NOT_SHOWING_YOUR_NAME_WITH_DOUBLE_")} class="butt can_do" data-role="answer-oppose" data-id="{$answer.id}">
+                    <span class="num">{$answer.oppose}</span>
+                    <br/>
+                    <i class="icon icon-thumbs-down"></i>
+                </a>
+            </if>
+        </div>
+
+        <div class="a_info">
+            <div class="answer_user">
+                <div class="cover"><img src="{$answer.user.avatar128}" alt=""></div>
+                <a ucard="{$answer.uid}" href="{$answer.user.space_url}">{$answer.user.nickname}</a>
+            </div>
+
+            <div class="a_content">{$answer.content|render}</div>
+
+            <div class="q_black_info">
+                <span class="time">发布于：{$answer.create_time|friendlyDate}</span>
+                <span>追问 15+</span>
+                <span class="reward" data-toggle="modal" data-target="#rewardBox">打赏</span>
+                <if condition="check_auth('Question/Answer/edit',$answer['uid'])">
+                    &nbsp;&nbsp;<a href="{:U('Question/Answer/edit',array('answer_id'=>$answer['id']))}">{:L("_EDIT_")}</a>
+                    &nbsp;&nbsp;<a href="{:U('Question/Answer/delAnswer',array('answer_id'=>$answer['id']))}">{:L("_DELETE_")}</a>
+                </if>
+            </div>
+        </div>
+    </div>
+
+    <div class="btnGroup">
+        <if condition="(check_auth('Question/Answer/setBest',-1)|| ($question['uid'] eq is_login())) && !$question['best_answer']">
+            <p data-role="set-best" data-id="{$answer['id']}" data-question-id="{$question.id}">采纳</p>
+        </if>
+        <if condition="$question['uid'] eq is_login()">
+            <p>追问</p>
+        </if>
+    </div>
+
+</div>
