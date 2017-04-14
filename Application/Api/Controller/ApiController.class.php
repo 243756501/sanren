@@ -91,7 +91,7 @@ class ApiController extends AdminController
                 }
                 else
                 {
-                    $this->error('');
+                    $this->error('不存在该用户！');
                 }
             }
             else if($data['uid']=="")

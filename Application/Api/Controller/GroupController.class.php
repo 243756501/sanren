@@ -324,7 +324,8 @@ class GroupController extends BaseController
     {
         $mid = getrandomId();
         $atime=getrandomTime($time);
-        $commdata=json_decode($commdata,true)['data'];
+        $commdata=json_decode($commdata,true);
+        $commdata=$commdata['data'];
         for($i=0;$i<count($commdata);$i++)
         {
             $atime=getrandomTime($atime);
@@ -369,17 +370,14 @@ class GroupController extends BaseController
     {
         $mid = getrandomId();
         $acomm=I_POST('comment','text');
+        $image=I_POST('image','text');
         $time=getrandomTime();
         $aGroupId = I_POST('group_id', 0, 'intval');
         $aPostId = I('get.id', 0, 'intval');
         $aTitle = I_POST('title', 'op_t');
         $aContent = I_POST('content', 'op_h');
         $aCategory = I_POST('cate_id', 'intval');
-        $attach_id = I_POST('attach_id', 'op_t');
-        $attach_ids = explode(',', $attach_id);
-        foreach ($attach_ids as $k => $v) {
-            $aContent .= "<p><img src='" . get_cover($v, 'path') . "'/></p>";
-        }
+        $aContent .= "<p><img src='" . $image . "'/></p>";
         unset($v);
 
         $aContent = str_replace("\\", '', $aContent);

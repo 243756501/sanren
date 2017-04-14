@@ -142,7 +142,7 @@ return array(
         array('message', 'Message/setAllReaded', '', array('request_args' => array('method' => 'PUT'))), //消息设置为已读
 
         /*问答相关*/
-        array('question_insert', 'Question/insertQuestion', '', array('request_args' => array('method' => 'POST'))), //获取问答的分类
+        array('question_insert', 'Question/insertQuestion', '', array('request_args' => array('method' => 'POST'))), //插入问答数据
         array('question_type', 'Question/getQuestionType', '', array('request_args' => array('method' => 'GET'))), //获取问答的分类
         array('question_list', 'Question/getQuestionList', '', array('request_args' => array('method' => 'GET'))), //获取某一分类或者类型下的问题列表
         array('question_user', 'Question/getUserQuestion', '', array('request_args' => array('method' => 'GET'))), //获取某一个用户的问答列表

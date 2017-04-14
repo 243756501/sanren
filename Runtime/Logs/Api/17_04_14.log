@@ -1,0 +1,959 @@
+[ 2017-04-14T10:05:38+08:00 ] ::1 /shanren/api/question_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_hooks` [ RunTime:0.006000s ]
+SQL: SELECT `name`,`addons` FROM `ocenter_hooks`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_addons` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SuperLinks')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SyncLogin','DevTeam','SystemInfo','LocalComment')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('Iswaf')  [ RunTime:0.002000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('CheckIn')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('Support')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('LocalComment')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SyncLogin')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SyncLogin')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('ChinaCity')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SuperLinks')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('InsertFile')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('SyncLogin')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('Retopic','Recommend')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('Report')  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('CheckIn')  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`name` FROM `ocenter_addons` WHERE `status` = 1 AND `name` IN ('Sensitive')  [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.040002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040002s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_THEME_NOW_THEME' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Api' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Core' LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Group' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Home' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'News' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'People' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Question' LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Ucenter' LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+SQL: SELECT * FROM `ocenter_module` WHERE `name` = 'Weibo' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_FIRST_USER_RUN' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_ACCESS_TOKEN' LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php on line 228 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_QUESTION_NEED_AUDIT' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.008000s ]
+SQL: INSERT INTO `ocenter_question` (`title`,`category`,`description`,`leixing`,`score_num`,`uid`,`status`,`id`,`update_time`,`create_time`) VALUES ('测试问答',1,'dsadasdasa',1,0,100,1,0,1492039699,1492039699) [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.043003s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_question' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action_log` [ RunTime:0.007001s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11008,0,0,'question',1332,1492135538,'操作url�\�/shanren/api/question_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+SQL: SHOW COLUMNS FROM `ocenter_ucenter_score_type` [ RunTime:0.010000s ]
+SQL: SELECT `config` FROM `ocenter_addons` WHERE `name` = 'CheckIn' AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.015001s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_question' LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+SQL: SELECT * FROM `ocenter_question` WHERE `id` = 1332 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user` [ RunTime:0.007000s ]
+ERR: 1146:Table 'sanren.ocenter_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_user`
+SQL: select uid,nickname,signature,score1 from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.109006s ]
+SQL: SHOW COLUMNS FROM `ocenter_avatar` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 100 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.009000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=100 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_role_config` [ RunTime:0.005000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 100 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=100 )  [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 100 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=100 )  [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 100 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=100 )  [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 100 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=100 )  [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.002001s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_QUESTION_ANSWER_MIN_NUM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1332,'哎哟不错哦！',0,0,1,1,0,0) [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1332 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',64,1492135538,'操作url�\�/shanren/api/question_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 64 AND `status` = 1 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 1 AND `row` = 64 LIMIT 1   [ RunTime:0.001000s ]
+SQL: select uid,nickname,signature,score1 from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_rank_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_rank_user` WHERE `uid` = 1 AND `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 492 行.
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.223013s ]
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=1 )  [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `ocenter_avatar` WHERE `uid` = 1 AND `status` = 1 AND `is_temp` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `show_role` FROM `ocenter_member` WHERE ( uid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_role_config` WHERE `role_id` = 1 AND `category` = '' AND `name` = 'avatar' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/4cfe6f27641912969a05ecbc17c101d5.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/b0703f03232cbf9a425d965ee44f1b8b.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1332,'这个评论吊！',0,0,1,1,0,0) [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1332 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',65,1492135538,'操作url�\�/shanren/api/question_insert') [ RunTime:0.000000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 65 AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 1 AND `row` = 65 LIMIT 1   [ RunTime:0.001000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1332,'哈哈哈哈哈哈�\�',0,0,1,1,0,0) [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1332 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',66,1492135538,'操作url�\�/shanren/api/question_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 66 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 1 AND `row` = 66 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.000000s ]
+
+[ 2017-04-14T10:06:07+08:00 ] ::1 /shanren/api/question_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php on line 228 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.007000s ]
+SQL: INSERT INTO `ocenter_question` (`title`,`category`,`description`,`leixing`,`score_num`,`uid`,`status`,`id`,`update_time`,`create_time`) VALUES ('测试问答2222',1,'dsadasdasa',1,0,1,1,0,1491189292,1491189292) [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.033002s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_question' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action_log` [ RunTime:0.007000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11008,0,0,'question',1333,1492135567,'操作url�\�/shanren/api/question_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+SQL: SHOW COLUMNS FROM `ocenter_ucenter_score_type` [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_question' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+SQL: SELECT * FROM `ocenter_question` WHERE `id` = 1333 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user` [ RunTime:0.009001s ]
+ERR: 1146:Table 'sanren.ocenter_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_user`
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.007000s ]
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1333,'哎哟不错哦！',0,0,1,100,0,0) [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1333 [ RunTime:0.001001s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',67,1492135567,'操作url�\�/shanren/api/question_insert') [ RunTime:0.000000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 67 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 100 AND `row` = 67 LIMIT 1   [ RunTime:0.001001s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_rank_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_rank_user` WHERE `uid` = 100 AND `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 492 行.
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1333,'这个评论吊！',0,0,1,100,0,0) [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1333 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',68,1492135567,'操作url�\�/shanren/api/question_insert') [ RunTime:0.000000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 68 AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 100 AND `row` = 68 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: answer_id E:\phpStudy\WWW\shanren\Application\Api\Controller\QuestionController.class.php 第 206 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Question\Model\QuestionAnswerModel.class.php 第 51 行.
+SQL: INSERT INTO `ocenter_question_answer` (`question_id`,`content`,`oppose`,`support`,`status`,`uid`,`update_time`,`create_time`) VALUES (1333,'哈哈哈哈哈哈�\�',0,0,1,100,0,0) [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_question` SET `answer_num`=answer_num+1 WHERE `id` = 1333 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11010,0,0,'question_answer',69,1492135567,'操作url�\�/shanren/api/question_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_answer' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\QuestionModel.class.php 第 96 行.
+SQL: SELECT * FROM `ocenter_question_answer` WHERE `id` = 69 AND `status` = 1 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ocenter_question_support` WHERE `uid` = 100 AND `row` = 69 LIMIT 1   [ RunTime:0.001000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001000s ]
+
+[ 2017-04-14T12:12:47+08:00 ] ::1 /shanren/api/news_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\NewsController.class.php on line 18 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ocenter_news` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `ocenter_news_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_news_category` WHERE `status` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.031002s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_auth_rule` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_auth_rule` WHERE `name` = 'Admin/News/setNewsStatus' AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id E:\phpStudy\WWW\shanren\Application\Api\Model\NewsModel.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `ocenter_news` [ RunTime:0.007001s ]
+SQL: INSERT INTO `ocenter_news` (`uid`,`title`,`category`,`description`,`cover`,`collection`,`dead_line`,`source`,`comment`,`view`,`position`,`sort`,`status`,`reason`,`update_time`,`create_time`) VALUES (100,'测试资讯拉dsadasdasdddddddddddddddddddddddddd',1,'123',0,0,2147483640,'',0,0,0,0,2,'',1489030476,1489030476) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_news' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_action_log` [ RunTime:0.006001s ]
+SQL: INSERT INTO `ocenter_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11007,100,0,'News',3,1492143167,'操作url�\�/shanren/api/news_insert') [ RunTime:0.001000s ]
+INFO: [ handleAction ] --START--
+SQL: SHOW COLUMNS FROM `ocenter_ucenter_score_type` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: newarr E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 167 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Addons\CheckIn\CheckInAddon.class.php 第 169 行.
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_action` WHERE `name` = 'add_news' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 816 行.
+SQL: SHOW COLUMNS FROM `ocenter_news_detail` [ RunTime:0.006001s ]
+SQL: INSERT INTO `ocenter_news_detail` (`content`,`template`,`news_id`) VALUES ('这个厉害哦ddddddddddddddddddddddddddddddddd','',3) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_news` WHERE `id` = 3 LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-04-14T12:15:40+08:00 ] ::1 /shanren/api/post_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\GroupController.class.php on line 373 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+
+[ 2017-04-14T12:15:48+08:00 ] ::1 /shanren/api/post_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\GroupController.class.php on line 373 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ocenter_group_post` [ RunTime:0.007000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_SUMMARY_LENGTH' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\GroupController.class.php on line 417 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: INSERT INTO `ocenter_group_post` (`uid`,`title`,`summary`,`cover`,`status`,`create_time`,`update_time`,`content`,`parse`,`group_id`,`cate_id`) VALUES (100,'ddd','测试�\�','',1,1491570420,1489873190,'测试�\�<p><img src=\'\'/></p>',0,6,0) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_dynamic` [ RunTime:0.005001s ]
+SQL: INSERT INTO `ocenter_group_dynamic` (`group_id`,`uid`,`type`,`row_id`) VALUES (6,100,'post',27) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.006000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group` SET `post_count`=post_count+1 WHERE `id` = 6 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_member` [ RunTime:0.005001s ]
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 100 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 27  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_post_reply` [ RunTime:0.007000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (27,'�\�2哟不2错哦�\�',1,1492143348,1484967089,100) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 77 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user` [ RunTime:0.004001s ]
+ERR: 1146:Table 'sanren.ocenter_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_user`
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.002000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.066004s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.005001s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_post` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 27 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.005000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_member` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 27 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143348 WHERE `id` = 27 [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 27  [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (27,'这个�\�2�\�2吊！',1,1492143348,1488444260,100) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 78 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 27 LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 27 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143348 WHERE `id` = 27 [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 27  [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (27,'哈哈2哈哈2哈哈�\�',1,1492143348,1488343214,100) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 79 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 27 LIMIT 1   [ RunTime:0.002000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 27 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143348 WHERE `id` = 27 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 27 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.001000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_support` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Group' AND `row` = 27 AND `table` = 'post' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_bookmark` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_group_bookmark` WHERE `post_id` = 27 LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_group_bookmark` WHERE `post_id` = 27 AND `uid` = 0 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Group' AND `row` = 27 AND `uid` = 0 AND `table` = 'post' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-04-14T12:24:04+08:00 ] ::1 /shanren/api/post_insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_anonymous` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\GroupController.class.php on line 373 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: SHOW COLUMNS FROM `ocenter_group_post` [ RunTime:0.009000s ]
+NOTIC: [2] Missing argument 1 for getrandomTime(), called in E:\phpStudy\WWW\shanren\Application\Api\Controller\GroupController.class.php on line 417 and defined E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 28 行.
+NOTIC: [8] Undefined variable: sdate E:\phpStudy\WWW\shanren\Application\Api\Common\function.php 第 30 行.
+SQL: INSERT INTO `ocenter_group_post` (`uid`,`title`,`summary`,`cover`,`status`,`create_time`,`update_time`,`content`,`parse`,`group_id`,`cate_id`) VALUES (1,'ddd','测试�\�1223','',1,1486854836,1490474660,'测试�\�1223<p><img src=\'\'/></p>',0,6,0) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_dynamic` [ RunTime:0.005001s ]
+SQL: INSERT INTO `ocenter_group_dynamic` (`group_id`,`uid`,`type`,`row_id`) VALUES (6,1,'post',28) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.009000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group` SET `post_count`=post_count+1 WHERE `id` = 6 [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_member` [ RunTime:0.005000s ]
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 1 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_anonymous` WHERE ( id>0 )  [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 28  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_post_reply` [ RunTime:0.006000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (28,'�\�2哟不2错哦�\�',1,1492143843,1486305760,100) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 80 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user` [ RunTime:0.004001s ]
+ERR: 1146:Table 'sanren.ocenter_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_user`
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.074004s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_API_APP_MIN_VERSION' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_post` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.004000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_member` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.001000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143843 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 28  [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (28,'这个�\�2�\�2吊！',1,1492143843,1484863684,100) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 81 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143843 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `ocenter_group_post` WHERE `id` = 28  [ RunTime:0.000000s ]
+SQL: INSERT INTO `ocenter_group_post_reply` (`post_id`,`content`,`status`,`update_time`,`create_time`,`uid`) VALUES (28,'哈哈2哈哈2哈哈�\�',1,1492143843,1490195417,100) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post_reply` WHERE `id` = 82 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=100 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 28 LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group` SET `activity`=activity+1 WHERE `id` = 6 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: UPDATE `ocenter_group_member` SET `activity`=activity+1 WHERE `group_id` = 6 AND `uid` = 0 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `reply_count`=reply_count+1 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: UPDATE `ocenter_group_post` SET `last_reply_time`=1492143843 WHERE `id` = 28 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_group_post` WHERE `id` = 28 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select signature from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 0 AND `follow_who` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_support` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Group' AND `row` = 28 AND `table` = 'post' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group_bookmark` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_group_bookmark` WHERE `post_id` = 28 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_group_bookmark` WHERE `post_id` = 28 AND `uid` = 0 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+NOTIC: [8] Undefined offset: 1 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 53 行.
+NOTIC: [8] Undefined offset: 2 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 54 行.
+NOTIC: [8] Undefined offset: 3 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 4 E:\phpStudy\WWW\shanren\Application\Api\Controller\BaseController.class.php 第 56 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Group' AND `row` = 28 AND `uid` = 0 AND `table` = 'post' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_group` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.001000s ]
+

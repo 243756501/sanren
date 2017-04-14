@@ -26,15 +26,19 @@ function randFloat($min=0, $max=1){
  * 随机获取2017年1月1日-至今的时间
  */
 function getrandomTime($sdate){
-    if($sdate)
+    if($sdate>0)
     {
-        $sdate=strtotime(date($sdate));
+        $sdate=$sdate;
+
     }
-    $sdate=strtotime('2017-01-01 00:00:00');
+    else
+    {
+        $sdate=strtotime('2017-01-01 00:00:00');
+    }
     $ndate=strtotime(date('Y-m-d H:i:s'));
-    $dvalue=$ndate-$sdate-3600; //设置一个小时的差值
+    $dvalue=$ndate-$sdate;
     $ran=randFloat();
-    $return=$sdate+intval($dvalue*$ran);
+    $return=$sdate+(int)($dvalue*$ran);
     return $return;
 }
 

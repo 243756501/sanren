@@ -17,6 +17,9 @@ class NewsController extends BaseController
         $mid = getrandomId();
         $time=getrandomTime();
         $aId = I('get.id', '', 'intval');
+        $image=I_POST('image','text');
+        $data=array('path'=>$image,'status'=>1,'creat_time'=>time(),'type'=>'self');
+        $picid=D('picture')->add($data);
         $title = $aId ? "编辑" : "新增";
         $NewsModel = D('Api/News');
         $aId && $data['id'] = $aId;
@@ -25,7 +28,7 @@ class NewsController extends BaseController
         $data['content'] = I_POST('content', 'text');
         $data['category'] = I_POST('category', 'intval');
         $data['description'] = I_POST('description', 'text');
-        $data['cover'] = I_POST('cover', 'intval');
+        $data['cover'] = $picid;
         $data['collection'] = I_POST('collection', 'intval');
         $data['dead_line'] = I_POST('dead_line', 'text');
         if ($data['dead_line'] == '') {

@@ -200,7 +200,8 @@ class QuestionController extends BaseController
         $mid = getrandomId();
         $aQuestionId = $questionId;
         $atime=$time;
-        $commdata=json_decode($commdata,true)['data'];
+        $commdata=json_decode($commdata,true);
+        $commdata=$commdata["data"];
         for($i=0;$i<count($commdata);$i++) {
             $atime=getrandomTime($atime);
             $aAnswerId = $commdata[$i]["answer_id"];
@@ -217,16 +218,7 @@ class QuestionController extends BaseController
             $data['question_id'] = $aQuestionId;
             $data['content'] = $aContent;
 
-            $resAnswer = $this->model->editAnswerData($data,$mid);
-            if ($resAnswer) {
-                //处理@
-                D('Common/ContentHandler')->handleAtWho($data['content'], 'Question/Index/detail#', array('id' => $data['question_id']));
-                //发送消息
-                $question = M('Question')->find($aQuestionId);
-                D('Common/Message')->sendMessage($question['uid'], $resAnswer['user']['nickname'] . '回答了你的问题【' . $question['title'] . '】或编辑了 Ta 的答案，快去看看吧！', '问题被回答', 'Question/Index/detail', array('id' => $aQuestionId), $mid, 1);
-                //Todo
-                ////推送功能
-            }
+            $resAnswer = $this->model->editAnswerData2($data,$mid);
         }
     }
 
@@ -243,10 +235,12 @@ class QuestionController extends BaseController
         $data['description'] = POST_I('description', 'filter_content');
         $data['leixing'] = POST_I('score_type','intval',1);
         $data['score_num'] = POST_I('score_num','intval',0);
+        $data['uid']=$mid;
         if( $data['score_num'] < 0){
             $this->apiError('悬赏必须大于0');
         }
         $data['status'] = $need_audit? 2: 1;
+        $data['id'] = $aId;
         $question = $this->model->editQuestion2($data,$mid,$time);
         if($question) {
             $this->insertQuestionComm($question, $acomm, $time);

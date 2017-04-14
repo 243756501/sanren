@@ -1,0 +1,761 @@
+[ 2017-04-14T11:23:49+08:00 ] ::1 /shanren/index.php?s=/weibo/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.022001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_WEIBO_DEFAULT_TAB' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo` [ RunTime:0.006000s ]
+SQL: SELECT `id` FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 0 ORDER BY create_time desc LIMIT 10   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 1 ORDER BY create_time desc  [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ocenter_checkin` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_checkin` WHERE `uid` = 1 AND `create_time` >= 1492099200 LIMIT 1   [ RunTime:0.001000s ]
+SQL: select con_check,total_check from `ocenter_member`,`ocenter_ucenter_member` where uid=id and uid=1 limit 1 [ RunTime:0.002000s ]
+NOTIC: [2] array_merge(): Argument #1 is not an array E:\phpStudy\WWW\shanren\Addons\CheckIn\Model\CheckInModel.class.php 第 19 行.
+NOTIC: [2] unlink(./Runtime/Temp/c036d79977bb7032e61def44c4623282.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/297ebeace232754637c57390b91b1db1.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ocenter_score_log` [ RunTime:0.010001s ]
+SQL: SELECT `value` FROM `ocenter_score_log` WHERE `uid` = 1 AND `type` = 1 AND `action` = 'inc' AND `create_time` BETWEEN 1492099200 AND 1492185600  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Controller\IndexController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `ocenter_weibo_topic` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `status` = 1 ORDER BY weibo_num desc LIMIT 10   [ RunTime:0.001001s ]
+NOTIC: [2] unlink(./Runtime/Temp/68b62ceb7f18ba621d645b5f4e4bb335.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/f2903fc6bdbbce2aaa25997e654462f2.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.042002s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.042002s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.006000s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 78 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 79 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 80 行.
+SQL: SELECT * FROM `ocenter_seo_rule` WHERE ( (app='' or app='Weibo') and (controller='' or controller='Index') and (action='' or action='index') and status=1 ) ORDER BY sort asc  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.082005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.085005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.092005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.007000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.011000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.009001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_WEIBO_INFO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_CAN_IMAGE' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_CAN_TOPIC' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_USE_TOPIC' LIMIT 1   [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: weibo E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 515 行.
+NOTIC: [8] Undefined variable: need_login_tab E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [8] Undefined variable: need_login_tab E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [8] Undefined variable: need_login_tab E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [8] Undefined variable: need_login_tab E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 523 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+INFO: [ checkIn ] --START--
+SQL: SELECT * FROM `ocenter_checkin` WHERE `uid` = 1 AND `create_time` >= 1492099200 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_merge(): Argument #1 is not an array E:\phpStudy\WWW\shanren\Addons\CheckIn\Model\CheckInModel.class.php 第 19 行.
+NOTIC: [2] unlink(./Runtime/Temp/c036d79977bb7032e61def44c4623282.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/297ebeace232754637c57390b91b1db1.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.178010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.093005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.096005s ]
+INFO: Run Addons\CheckIn\CheckInAddon [ RunTime:0.006000s ]
+INFO: [ checkIn ] --END-- [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.318018s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv_pos` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'below_self_info' AND `path` = 'Weibo/Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_adv` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 4 AND `status` = 1 AND `start_time` < 1492140229 AND `end_time` > 1492140229 ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.212012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.130007s ]
+INFO: [ weiboSide ] --START--
+NOTIC: [2] unlink(./Runtime/Temp/f337e5618611d8d2f2f274b6994e248d.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/87110fdb58f80ecbccad3d048b41d3cb.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ocenter_addons` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_addons` WHERE `name` = 'Recommend' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array E:\phpStudy\WWW\shanren\Addons\Recommend\Common\function.php 第 25 行.
+NOTIC: [2] sort() expects parameter 1 to be array, null given E:\phpStudy\WWW\shanren\Addons\Recommend\Common\function.php 第 26 行.
+INFO: Run Addons\Recommend\RecommendAddon [ RunTime:0.014001s ]
+INFO: [ weiboSide ] --END-- [ RunTime:0.014001s ]
+SQL: SELECT * FROM `ocenter_adv_pos` WHERE `name` = 'below_checkrank' AND `path` = 'Weibo/Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_adv` WHERE `pos_id` = 2 AND `status` = 1 AND `start_time` < 1492140229 AND `end_time` > 1492140229 ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\AdvModel.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.234013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.149008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.153009s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.376022s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.252014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.165009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.174010s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Weibo\c2993ac2a6b2be2fd3fb80417f33d2d4.php 第 806 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.398023s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.401023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.267015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.182010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.187010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.182010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.187010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-14T11:23:50+08:00 ] ::1 /shanren/index.php?s=/weibo/index/loadweibo/uid/0.html&page=1&lastId=88&type=all&loadCount=1&select=all_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.018001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.010001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.007000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo` [ RunTime:0.007000s ]
+SQL: SELECT `id` FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 0 AND `id` < 88 ORDER BY create_time desc LIMIT 10   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.026001s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo_cache` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `id` = 87 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `create_time` < '1491120515' AND `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_WEIBO_BR' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SHOW COLUMNS FROM `ocenter_weibo_topic` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN () 
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 167 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_HOT_WEIBO_COMMENT_NUM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_attest` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_attest` WHERE `uid` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_first E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 117 行.
+NOTIC: [8] Undefined variable: is_hot E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 119 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `ocenter_support` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 87 ORDER BY create_time desc LIMIT 5   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SupportModel.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 87 LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.073004s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_SHOW_TITLE' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.103006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.086005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_WEIBO_SHOW_COMMENT' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.120007s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo_comment` [ RunTime:0.007000s ]
+SQL: SELECT `id` FROM `ocenter_weibo_comment` WHERE `weibo_id` = 87 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 60 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 61 LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 59 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 60 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 60 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 61 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 61 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 59 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 59 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.150008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063004s ]
+NOTIC: [8] Undefined variable: show_follow E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 278 行.
+SQL: SHOW COLUMNS FROM `ocenter_support` [ RunTime:0.008000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 87 AND `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.172010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.084005s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `id` = 86 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `create_time` < '1490001875' AND `uid` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN ()  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN () 
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 167 行.
+SQL: SELECT * FROM `ocenter_attest` WHERE `uid` = 100 AND `status` = 1 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: is_first E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 117 行.
+NOTIC: [8] Undefined variable: is_hot E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 119 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.004001s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 86 ORDER BY create_time desc LIMIT 5   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SupportModel.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 86 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.200011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.206012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.112006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.117007s ]
+SQL: SELECT `id` FROM `ocenter_weibo_comment` WHERE `weibo_id` = 86 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 57 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 58 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 56 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 57 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 57 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 58 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 58 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 56 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 56 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.239013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.151009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.151009s ]
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `follow_who` = 100 AND `who_follow` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 86 AND `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.261015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.165009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.173010s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `id` = 85 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `create_time` < '1489873763' AND `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN () 
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 167 行.
+NOTIC: [8] Undefined index: is_first E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 117 行.
+NOTIC: [8] Undefined variable: is_hot E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 119 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 85 ORDER BY create_time desc LIMIT 5   [ RunTime:0.002001s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SupportModel.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 85 LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.281016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.287016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.193011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.204012s ]
+SQL: SELECT `id` FROM `ocenter_weibo_comment` WHERE `weibo_id` = 85 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 53 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 55 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 54 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 53 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 53 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 55 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 55 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 54 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 54 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.330019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.233013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.241014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.233013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.241014s ]
+NOTIC: [8] Undefined variable: show_follow E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 278 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 85 AND `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.345020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.250014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.255015s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `id` = 83 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `create_time` < '1484104448' AND `uid` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN ()  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN () 
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 167 行.
+NOTIC: [8] Undefined variable: is_hot E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 119 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 83 ORDER BY create_time desc LIMIT 5   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SupportModel.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 83 LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.367021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.376021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.281016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.288017s ]
+SQL: SELECT `id` FROM `ocenter_weibo_comment` WHERE `weibo_id` = 83 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 49 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 49 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 49 LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.399023s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.303017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.310018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.303017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.310018s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `follow_who` = 100 AND `who_follow` = 1 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 83 AND `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.410023s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.316018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.320018s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `id` = 84 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_weibo` WHERE `status` = 1 AND `create_time` < '1483796853' AND `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `ocenter_weibo_topic` WHERE `id` IN () 
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 167 行.
+NOTIC: [8] Undefined variable: is_hot E:\phpStudy\WWW\shanren\Application\Weibo\Model\WeiboModel.class.php 第 119 行.
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 84 ORDER BY create_time desc LIMIT 5   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SupportModel.class.php 第 60 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 84 LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.428024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.435025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.341020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.345020s ]
+SQL: SELECT `id` FROM `ocenter_weibo_comment` WHERE `weibo_id` = 84 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 51 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 50 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT * FROM `ocenter_weibo_comment` WHERE `id` = 52 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\phpStudy\WWW\shanren\Application\Common\Common\ext_parse.php 第 178 行.
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 51 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 51 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 50 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 50 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `row` = 52 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo_comment' AND `uid` = 1 AND `row` = 52 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] array_intersect(): Argument #2 is not an array E:\phpStudy\WWW\shanren\Application\Common\Model\UserModel.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.469027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.373021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.381022s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.373021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.381022s ]
+NOTIC: [8] Undefined variable: show_follow E:\phpStudy\WWW\shanren\Application\Weibo\Common\function.php 第 278 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 84 AND `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.480027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.385022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.390022s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.385022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.391022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T11:23:52+08:00 ] ::1 /shanren/index.php?s=/weibo/index/loadweibo/uid/0.html&page=1&lastId=84&type=all&loadCount=2&select=all_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.011001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.024002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo` [ RunTime:0.010001s ]
+SQL: SELECT `id` FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 0 AND `id` < 84 ORDER BY create_time desc LIMIT 10   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.030002s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo_cache` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `follow_who` = 100 AND `who_follow` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_support` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_support` WHERE `appname` = 'Weibo' AND `table` = 'weibo' AND `row` = 83 AND `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-14T11:23:53+08:00 ] ::1 /shanren/index.php?s=/weibo/index/loadweibo/uid/0.html&page=1&lastId=83&type=all&loadCount=3&select=all_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.021002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.013001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token E:\phpStudy\WWW\shanren\Application\Common\Model\ModuleModel.class.php 第 242 行.
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_weibo` [ RunTime:0.006001s ]
+SQL: SELECT `id` FROM `ocenter_weibo` WHERE `status` = 1 AND `is_top` = 0 AND `id` < 83 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000000s ]
+NOTIC: [2] end() expects parameter 1 to be array, boolean given E:\phpStudy\WWW\shanren\Application\Weibo\Controller\IndexController.class.php 第 236 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

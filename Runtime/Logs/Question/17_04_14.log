@@ -1,0 +1,1255 @@
+[ 2017-04-14T10:05:53+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.005001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.005001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.008000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457153 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457153 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_SENSITIVE_OPEN_SENSITIVE' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_ucenter_short` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_ucenter_short` WHERE `uid` = 100 AND `status` = 1 LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.003001s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.007000s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 78 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 79 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 80 行.
+SQL: SELECT * FROM `ocenter_seo_rule` WHERE ( (app='' or app='Question') and (controller='' or controller='Index') and (action='' or action='index') and status=1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keywords E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 58 行.
+NOTIC: [8] Undefined index: description E:\phpStudy\WWW\shanren\Application\Common\Model\SeoRuleModel.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.005000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.004000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.005000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.207012s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.094005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.073004s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001001s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.225013s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.228013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.107006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-14T10:05:57+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.005000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.007001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457156 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457156 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.005001s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.005001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.188011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.099006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.081005s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.207012s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.214012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.117007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.098006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.098006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T10:05:58+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.004000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.004000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.011001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457157 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457157 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.006000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.007001s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.195011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.101006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.085005s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.219013s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.223013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.116007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.100006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.100006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T10:06:00+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.006000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457159 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457159 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.009001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.007001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.005000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.005000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.187011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.100005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.079004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.082005s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.207012s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.214012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.117006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.100006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.100006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T10:06:09+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.024002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.006001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457169 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457169 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.003000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.007001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.005001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.007000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.007000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.196011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.105006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.090005s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.220013s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.224013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.123007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.106006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.106006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T10:06:10+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.008001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.009001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457170 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457170 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.005000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.005000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.178010s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.088005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.069003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.072004s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.197011s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.201011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.104005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.086004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.088005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.086004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.088005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-14T10:06:11+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.010001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457170 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457170 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.004000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002001s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.007000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.005001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.007000s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.008001s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.220013s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.111006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.091005s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001001s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.240014s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.245014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.128007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.108006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.109006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-14T10:06:11+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.005001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.005001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.008000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457171 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457171 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.005000s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.010001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.188011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.094005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.079004s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.002000s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.207012s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.211012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.109006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.093005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.094005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-14T10:06:12+08:00 ] ::1 /shanren/index.php?s=/question/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+NOTIC: [8] Undefined index: router E:\phpStudy\WWW\shanren\Application\Common\Common\function.php 第 1936 行.
+SQL: SHOW COLUMNS FROM `ocenter_config` [ RunTime:0.005000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `ocenter_module` [ RunTime:0.007001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_category` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_support` [ RunTime:0.006001s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_QUESTION_PRESET' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`status` FROM `ocenter_question_category` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_answer` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question_answer` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `uid` = 1 AND `status` >= 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_question_rank` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ocenter_question_rank` ORDER BY answer_count desc LIMIT 10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Question\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457172 AND `best_answer` = 0 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `ocenter_question` WHERE `status` = 1 AND `update_time` > 1489457172 AND `best_answer` = 0 ORDER BY create_time desc LIMIT 0,15   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+SQL: SHOW COLUMNS FROM `ocenter_follow` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `ocenter_follow` WHERE `who_follow` = 1 AND `follow_who` = 100 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 E:\phpStudy\WWW\shanren\Application\Common\Common\thumb.php 第 180 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ syncMeta ] --START--
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.003000s ]
+INFO: [ syncMeta ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ocenter_seo_rule` [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_pushing` [ RunTime:0.008001s ]
+ERR: 1146:Table 'sanren.ocenter_pushing' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ocenter_pushing`
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.006000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_LOGO' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_channel` [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+NOTIC: [8] Undefined index: _ E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 141 行.
+SQL: SHOW COLUMNS FROM `ocenter_member` [ RunTime:0.004000s ]
+SQL: SELECT `reg_time` FROM `ocenter_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `ocenter_user_config` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `ocenter_user_config` WHERE `uid` = 1 AND `name` = 'user_cover' AND `role_id` = 0 AND `model` = '' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ocenter_picture` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_picture` WHERE `status` = 1 AND `id` = null LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Runtime/Temp/0a127acecd81cf94508ebb1bef01abd6.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] unlink(./Runtime/Temp/a134993c2657395bb8538923404b76f0.php): No such file or directory E:\phpStudy\WWW\shanren\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_USERCONFIG_LEVEL' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: before_level_need E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [2] Division by zero E:\phpStudy\WWW\shanren\Application\Ucenter\Model\TitleModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: question_cate E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 431 行.
+NOTIC: [8] Undefined variable: parent E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 434 行.
+NOTIC: [8] Use of undefined constant q - assumed 'q' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 496 行.
+NOTIC: [8] Use of undefined constant a - assumed 'a' E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 500 行.
+SQL: SELECT `value` FROM `ocenter_config` WHERE `name` = '_CONFIG_QRCODE_BOTTOM' LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.187011s ]
+NOTIC: [2] Missing argument 1 for Common\Widget\SuperLinksWidget::superLinks() E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `ocenter_super_links` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ocenter_super_links` WHERE ( status = 1 ) ORDER BY level desc,id asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: data E:\phpStudy\WWW\shanren\Application\Common\Model\SuperLinksModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: param E:\phpStudy\WWW\shanren\Application\Common\Widget\SuperLinksWidget.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.095005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.082004s ]
+NOTIC: [8] Undefined variable: site E:\phpStudy\WWW\shanren\Runtime\Cache\Question\859f52d3b5e6b3cb9b3599179973aa82.php 第 590 行.
+INFO: [ pageFooter ] --START--
+INFO: Run Addons\SuperLinks\SuperLinksAddon [ RunTime:0.001001s ]
+INFO: [ pageFooter ] --END-- [ RunTime:0.001001s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.209012s ]
+SQL: SELECT `type`,`name`,`value` FROM `ocenter_config` WHERE `status` = 1  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: res E:\phpStudy\WWW\shanren\Application\Common\Common\role.php 第 147 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitModuleInfoBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.214012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.112006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.095005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.098005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.095005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.098005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -41,7 +41,7 @@ class QuestionAnswerModel extends Model
         }
         return $res;
     }
-    public function editData2($data,$time)
+    public function editData2($data,$time,$mid)
     {
         $contentHandler = new ContentHandlerModel();
         if (isset($data['content'])){
@@ -49,7 +49,7 @@ class QuestionAnswerModel extends Model
         }
 
         if ($data['id']) {
-            $data['update_time'] = time();
+            $data['update_time'] = $time;
             $res = $this->save($data);
             if ($res) {
                 action_log('edit_answer', 'question_answer', $data['id'], get_uid());
@@ -57,12 +57,12 @@ class QuestionAnswerModel extends Model
         } else {
             $data['support'] = $data['oppose'] = 0;
             $data['status'] = 1;
-            $data['uid'] = get_uid();
+            $data['uid'] = $mid;
             $data['create_time'] = $data['update_time'] = $time;
             $res = $this->add($data);
             if ($res) {
                 D('Question/Question')->where(array('id' => $data['question_id']))->setInc('answer_num');
-                action_log('add_answer', 'question_answer', $res, get_uid());
+                action_log('add_answer', 'question_answer', $res, $mid);
             }
         }
         return $res;

@@ -63,10 +63,11 @@ class WeiboController extends BaseController
     /*
      * 插入微博评论
      */
-    public function  insertWeiboComm($weiboId,$subtime,$commdata){
+    public function  insertWeiboComm($weiboId,$subtime,$commdata,$weibo){
         $mid=getrandomId();
         $atime=$subtime;
-        $commdata=json_decode($commdata,true)['data'];
+        $commdata=json_decode($commdata,true);
+        $commdata=$commdata['data'];
         $aWeiboId=$weiboId;
         for($i=0;$i<count($commdata);$i++)
         {
@@ -81,7 +82,6 @@ class WeiboController extends BaseController
             if (empty($aContent)) {
                 $this->apiError('评论内容不能为空。');
             }
-
             $comment_id = $weiboModel->sendranComment($aWeiboId, $aContent, $aCommentId, $mid,$atime); //发布评论
 
             if (!$comment_id) {
@@ -90,28 +90,8 @@ class WeiboController extends BaseController
             D('Weibo/WeiboCache')->cleanCache($aWeiboId);
             //行为日志
             action_log('add_weibo_comment', 'weibo_comment', $comment_id, $mid);
-
-            //通知微博作者
-            $weibo = $weiboModel->getWeibo($aWeiboId,$mid);
-            $weiboModel->sendCommentMessage($weibo['uid'], $aWeiboId, "评论内容：$aContent", $mid);
-
-
-            //通知回复的人
-
-            $toComment = $weiboModel->getComment($aCommentId);
-            if ($toComment['uid'] != $weibo['uid']) {
-                $weiboModel->sendCommentMessage($toComment['uid'], $aWeiboId, "回复内容：$aContent", $mid);
-            }
-            $userList = get_at_uids($aContent);
-            $weiboModel->sendAtMessage($userList, $aWeiboId, $aContent, $mid);
-
-            //推送功能
-            $userList = array_merge(array($weibo['uid']),$userList,array($toComment['uid']));
-            $userList = array_filter($userList);
-            $pushData = array('mod'=>'weibo','type' => 'os_reply','arg' => $weibo['id'],'content' => mb_substr(fmat_at_text($aContent),0,50));
-//        $userList = array(168,7082);
-            igetuiPush($userList,$pushData);
         }
+        $this->apiSuccess('发布微博成功',$weibo);
     }
     /*
      * 插入微博及评论
@@ -131,14 +111,6 @@ class WeiboController extends BaseController
         $weiboModel = D('Api/Weibo');
         $geolocationId = D('Api/User')->addGeolocation($aGeolocation,$mid);
         //权限判断
-//        $this->ApiCheckAuth('Weibo/Index/doSend', -1, '您无微博发布权限。');
-        //圈子发布权限判断
-        if($aType == 'crowd'){
-            if(!$weiboModel->checkSendAuthCrowd($aCrowdId,$mid)){
-                $this->apiError('没有圈子发布微博的权限');
-            }
-        }
-
         if (empty($aContent)) {
             $this->apiError('发布内容不能为空。');
         }
@@ -159,11 +131,6 @@ class WeiboController extends BaseController
             }
         }
 
-        // 行为限制
-        $return = check_action_limit('add_weibo', 'weibo', 0, $mid, true);
-        if ($return && !$return['state']) {
-            $this->apiError($return['info']);
-        }
         $content=parse_at_app_users($aContent);
 
         // todo 判断各种类型参数的判断
@@ -173,7 +140,6 @@ class WeiboController extends BaseController
                 $this->apiError('请上传附件！');
             }
         }
-
         // 执行发布，写入数据库
         $weibo_content=$aContent;
         $weiboTopicModel=D('Weibo/Topic');
@@ -201,6 +167,7 @@ class WeiboController extends BaseController
             }
             unset($val);
             D('Weibo/WeiboTopicLink')->addDatas($weiboTopicLink);
+
         }
         //行为日志
 
@@ -236,8 +203,8 @@ class WeiboController extends BaseController
 
         $weibo = $weiboModel->getWeibo($weibo_id,$mid);
         if($weibo){
-            $this->insertWeiboComm($weibo_id,$subtime,$acomm);
-            $this->apiSuccess('发布微博成功',$weibo);
+            $this->insertWeiboComm($weibo_id,$subtime,$acomm,$weibo);
+
         }else
         {
             $this->apiError('发布失败');
@@ -250,6 +217,7 @@ class WeiboController extends BaseController
     public function sendWeibo()
     {
         $mid = $this->requireIsLogin(); //当前用户uid
+        $mid=getrandomId();
         $aContent = I_POST('content','html');
         $aFrom = I_POST('from', 'text');
         $aCover = I_POST('cover', 'intval');
@@ -440,13 +408,13 @@ class WeiboController extends BaseController
                 $map['uid'] = $aUid;
                 break;
         }
-        if($type != 'crowd'){   //屏蔽私密圈子的微博
-            $invisibleList = D('Weibo/WeiboCrowd')->getInvisible();
-            if (!empty($invisibleList)) {
-                $invisible = array_column($invisibleList,'id');
-                $map['crowd_id'] = array('not in',$invisible);
-            }
-        }
+//        if($type != 'crowd'){   //屏蔽私密圈子的微博
+//            $invisibleList = D('Weibo/WeiboCrowd')->getInvisible();
+//            if (!empty($invisibleList)) {
+//                $invisible = array_column($invisibleList,'id');
+//                $map['crowd_id'] = array('not in',$invisible);
+//            }
+//        }
         $weiboList = $type == 'topic'?$weiboList: $weiboModel->where($map)->order($order)->page($aPage,10)->select();
         //获取每个微博详情
         foreach ($weiboList as &$weibo) {

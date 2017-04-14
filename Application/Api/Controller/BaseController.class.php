@@ -24,9 +24,9 @@ class BaseController extends RestController
 
         $aToken = I_POST('access_token');
         $open_id = I_POST('open_id');
-        if ($aToken != $this->appKey) {
-            $this->apiReturn(400, '无效的access_token');
-        }
+//        if ($aToken != $this->appKey) {
+//            $this->apiReturn(400, '无效的access_token');
+//        }
         if($this->appVersion){             //版本控制
             $aVersion = I_POST('version');
             if(!$aVersion || compare_version($aVersion,$this->appVersion) > 0){
